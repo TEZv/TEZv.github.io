@@ -16,10 +16,10 @@
 ├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the exercises/lecture-02/index.html file<br>
-- [x] Create on the https://github.com the site, that has 4 pages:
-I. Головна - index.html
-II. Про нас - about.html
-III. Каталог - catalog.html
+- [x] Create on the https://github.com the site, that has 4 pages:<br>
+I. Головна - index.html<br>
+II. Про нас - about.html<br>
+III. Каталог - catalog.html<br>
 IV. Контакти - contact.html<br>
 Each page needs to have:
 - nav
