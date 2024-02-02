@@ -7,14 +7,14 @@
 - [x] In the root folder of the project execute: <br>
   git remote add origin https://github.com/<Github name>/<Github name>.github.io<br>
 - [x] Create the project structure:<br>
-├── exercises
-│   ├── index.html
-│   ├── lecture-01
-│   │   ├── index.html
-│   │   └── README.md
-│   └── README.md
-├── index.html
-├── LICENSE
+├── exercises<br>
+│   ├── index.html<br>
+│   ├── lecture-01<br>
+│   │   ├── index.html<br>
+│   │   └── README.md<br>
+│   └── README.md<br>
+├── index.html<br>
+├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the exercises/README.md file <br>
 - [x] Edit the exercises/lecture-01/README.md file<br>

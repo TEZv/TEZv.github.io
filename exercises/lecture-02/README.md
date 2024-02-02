@@ -3,17 +3,17 @@
 
 - [x] Edit the title in the index.html file <br>
 - [x] Edit the project structure:<br>
-├── exercises
-│   ├── index.html
-│   ├── lecture-01
-│   │   ├── index.html
-│   │   └── README.md
-│   ├── lecture-02
-│   │   ├── index.html
-│   │   └── README.md
-│   └── README.md
-├── index.html
-├── LICENSE
+├── exercises<br>
+│   ├── index.html <br>
+│   ├── lecture-01<br>
+│   │   ├── index.html<br>
+│   │   └── README.md<br>
+│   ├── lecture-02<br>
+│   │   ├── index.html<br>
+│   │   └── README.md<br>
+│   └── README.md<br>
+├── index.html<br>
+├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the exercises/lecture-02/index.html file<br>
 - [x] Create on the https://github.com the site, that has 4 pages:
