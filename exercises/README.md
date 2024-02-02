@@ -15,7 +15,8 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ├── lecture-01        
 ├── _lecture-02_ ----> _#Task 2_ <br>
 └── README.md <br>
-The lecture-02 website: <br>
+The lecture-02 website: https://qalight-tezv-lecture-02.netlify.app/<br>
+The lecture-02 task-6 website: <br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-02
 
 ## **#Task 3**
@@ -27,3 +28,6 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 └── README.md <br>
 The lecture-03 website: <br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03
+
+**P.S.** I will create the folders in the root directory if necessary to complete all tasks in the lecture😃, for example:<br>
+exercises_<lecture-nn>_<task-n>
