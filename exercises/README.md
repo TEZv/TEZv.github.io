@@ -10,7 +10,7 @@ The lecture-01 website: https://tezv.github.io/ <br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-01
 
 ## **#Task 2**
-### `Duration`: 
+### `Duration`: 31.01.24-02.02.24
 .<br>
 ├── lecture-01        
 ├── _lecture-02_ ----> _#Task 2_ <br>
