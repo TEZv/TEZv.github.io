@@ -32,4 +32,4 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 
 **P.S.** <br>
 I will create the folders in the root directory if necessary to complete all tasks in the lecture😃, for example:<br>
-<b>exercises_`lecture-nn`_`task-n`</b>
+<b>exercises_`lecture-NN`_`task-N`</b>
