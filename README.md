@@ -17,7 +17,7 @@ This story takes its beginning since 25 January thanks to the https://foundation
 ### The Lecturer of the course
 <a href="https://github.com/couchjanus">Janus Couch</a>
 
-## The Mentor of the course
+### The Mentor of the course
 Vlad Solonko
 
 ### My />Web Developer</ projects from the QALight
