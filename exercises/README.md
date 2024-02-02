@@ -27,7 +27,7 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ├── _lecture-03_----> _#Task 3_ <br>
 └── README.md <br>
 The lecture-03 website: <br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03<br>
 
 **P.S.** I will create the folders in the root directory if necessary to complete all tasks in the lecture😃, for example:<br>
 <b>exercises_`lecture-nn`_`task-n`</b>
