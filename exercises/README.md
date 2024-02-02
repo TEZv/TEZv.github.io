@@ -30,4 +30,4 @@ The lecture-03 website: <br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03
 
 **P.S.** I will create the folders in the root directory if necessary to complete all tasks in the lecture😃, for example:<br>
-exercises_<lecture-nn>_<task-n>
+<b>exercises_`lecture-nn`_`task-n`</b>
