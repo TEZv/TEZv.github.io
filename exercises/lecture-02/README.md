@@ -20,7 +20,7 @@
 I. Головна - index.html<br>
 II. Про нас - about.html<br>
 III. Каталог - catalog.html<br>
-IV. Контакти - contact.html<br>
+IV. Контакти - contact.html<br><br>
 Each page needs to have:
 - nav
 - header
