@@ -1,11 +1,22 @@
 # QALight
 ## The Homework to the Lecture 2
 
-## My tasks were:
-- [x] <br>
-- [x] <br>
-- [x] <br>
-- [x] <br>
+- [x] Edit the title in the index.html file <br>
+- [x] Edit the project structure:<br>
+├── exercises
+│   ├── index.html
+│   ├── lecture-01
+│   │   ├── index.html
+│   │   └── README.md
+│   ├── lecture-02
+│   │   ├── index.html
+│   │   └── README.md
+│   └── README.md
+├── index.html
+├── LICENSE
+└── README.md<br>
+- [x] Edit the exercises/lecture-02/index.html file<br>
+- [x] Execute git add . -> git commit -m "added exercise 1" -> git push origin main
 <br><br>
 **P.S.** 😃.
 
