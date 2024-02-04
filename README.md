@@ -20,6 +20,9 @@ This story takes its beginning since 25 January thanks to the https://foundation
 ### The Mentor of the course
 Vlad Solonko
 
+### Languages
+Ukrainian/English
+
 ### LICENSE
 This repository follows the <a href="https://github.com/couchjanus/web-dev-exercises/blob/main/LICENSE">MIT License</a>.
 
