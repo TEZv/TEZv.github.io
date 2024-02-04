@@ -1,0 +1,7 @@
+@import url("./common.css");
+
+/*  THE TASK 8 SECTION  */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
