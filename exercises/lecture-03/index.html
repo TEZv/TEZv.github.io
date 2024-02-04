@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- ------            THE TASK 2/3/4 SECTIONS        ---------------->
+
+    <style>
+      /*TASK 2*/
+      /* Додайте тут елемент style 
+		Всередині style визначте селектор p з 
+		властивістю color: red;*/
+
+      p {
+        color: red;
+      }
+
+      /*TASK 3*/
+      /* Remark mistakes with declaration */
+
+      .exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+      }
+
+      /*TASK 4*/
+      /* Add --bgColor: for the "div" */
+      /*
+        визначте для елементів p властивість фону таким чином:
+        background: var(--bgColor);
+        */
+
+      body {
+        background: var(--bgColor);
+      }
+
+      div {
+        --bgColor: limegreen;
+      }
+      p {
+        background: var(--bgColor);
+      }
+    </style>
+
+    <!-- ------            THE TASK 2 SECTION        ---------------->
+  </head>
+  <body>
+    <!--------            THE TASK 1 SECTION        ---------------->
+
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <!-- На сайті Wikipedia знайдіть сторінку про CSS українською мовою -->
+    <!-- Додайте тут елемент iframe з посиланням на українську версію Wikipedia page for the CSS language -->
+    <!-- В елементі iframe визначте атрибут title зі значенням Сторінка Вікіпедії для мови CSS -->
+
+    <iframe
+      title="Сторінка Вікіпедії для мови CSS"
+      src="https://uk.wikipedia.org/wiki/CSS"
+      width="100%"
+      height="400px"
+    ></iframe>
+
+    <!--------            THE TASK 1 SECTION        ---------------->
+
+    <!--------            THE TASK 2 SECTION        ---------------->
+
+    <p style="color: blue">This is my paragraph.</p>
+
+    <!-- 
+		який колір буде мати текст This is my paragraph і чому?
+	-->
+
+    <!-- 
+		The text "This is my paragraph" will be blue as the <p> element
+		has the inline style rule: "color: blue"
+	-->
+
+    <!--------            THE TASK 2 SECTION        ---------------->
+
+    <!--------            THE TASK 3 SECTION        ---------------->
+
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p class="exciting">
+      The most exciting paragraph on the page. One of a kind!
+    </p>
+    <div class="exciting">
+      The most exciting paragraph on the page. One of a kind!
+    </div>
+
+    <!--------            THE TASK 3 SECTION        ---------------->
+
+    <!--------            THE TASK 4 SECTION        ---------------->
+
+    <div>
+      <h3>Div 1</h3>
+      <p>Paragraph 1</p>
+    </div>
+
+    <div>
+      <h3>Div 2</h3>
+      <p>Paragraph 2</p>
+    </div>
+
+    <!-- Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. -->
+
+    <!-- The background of the "body" element remain by default or be absent
+	-> "--bgColor" determine only for the "div" element, not others elements-->
+
+    <!--------            THE TASK 4 SECTION        ---------------->
+
+    <!--------            THE TASK 9 SECTION        ---------------->
+    <footer>
+      <!-- "About" -->
+      <!-- створити тут секцію -->
+      <!-- створити тут div -->
+      <section>
+        <div>
+          <h2>About</h2>
+          <!-- створити тут невпорядкований список -->
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+      <!-- "Resources" -->
+	  <!-- створити тут div -->
+        <div>
+          <h2>Resources</h2>
+		  <!-- створити тут невпорядкований список -->
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+      <!-- "Contact" -->
+      <!-- створити тут div -->
+        <div>
+          <h2>Contact</h2>
+		  <!-- створити тут невпорядкований список -->
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+
+      <!-- Footer legal -->
+	  <!-- створити тут секцію -->
+      <section>
+		<!-- створити тут невпорядкований список -->
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+		  <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+        </ul>
+      </section>
+
+	</section>
+    </footer>
+
+    <!--------            THE TASK 9 SECTION        ---------------->
+  </body>
+</html>
