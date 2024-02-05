@@ -4,4 +4,24 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+
+  /*My edition*/
+  width: 80%; /* Set a fixed width for the body element */ 
+  text-align: center; /* Center the body element within its parent */
+  /*My edition*/
 }
+
+/*My edition*/
+li {
+  list-style-type: none;
+}
+section {
+  margin: 30px 40px;
+}
+iframe {
+  width: 1200px;
+  height: 400px;
+  padding: 10px;
+  background: linear-gradient(40deg, yellow, blue);
+}
+/*My edition*/

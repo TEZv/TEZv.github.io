@@ -4,7 +4,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
+
+  /*My edition*/
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  /*My edition*/
   
   /*    THE TASK 7 SECTION   */
   html {
