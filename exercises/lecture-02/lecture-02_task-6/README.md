@@ -17,7 +17,7 @@ Each page needs to have:
 Of the current task: <br>
 The lecture-02 website: https://qalight-tezv-lecture-02.netlify.app/<br>
 The lecture-02 task-6 website: https://qalight-tezv-lecture-02-task6.netlify.app/<br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-01
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-02
 <br />
 --> Netlify
 
