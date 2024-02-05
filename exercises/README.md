@@ -20,7 +20,7 @@ The lecture-02 task-6 website: https://qalight-tezv-lecture-02-task6.netlify.app
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-02
 
 ## **#Task 3**
-### `Duration`: 
+### `Duration`: 02.02.24 - 05.02.24
 .<br>
 ├── lecture-01         
 ├── lecture-02 <br>
