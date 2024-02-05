@@ -1,10 +1,10 @@
 /*    THE TASK 6 SECTION   */
+@import url("my-imported-styles.css");
+/* @import MUST be before the styles, i.e. --> "my-imported-styles.css" doesn't exist here */
 * {
     margin: 0;
     padding: 0;
   }
-  
-  @import url("my-imported-styles.css");
   
   /*    THE TASK 7 SECTION   */
   html {
