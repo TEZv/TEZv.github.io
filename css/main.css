@@ -6,7 +6,6 @@ body {
   background-color: var(--primary-bg-color);
 
   /*My edition*/
-  width: 80%; /* Set a fixed width for the body element */ 
   text-align: center; /* Center the body element within its parent */
   /*My edition*/
 }
