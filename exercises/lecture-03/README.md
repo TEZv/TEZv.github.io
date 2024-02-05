@@ -22,7 +22,7 @@
 - [x] Check how the --bgColor rule works in the <`style`><br>
 - [x] Create css/main.css and css/common.css in the root directory on the same level with the `exercises` folder<br>
 - [x] Turn on css/main.css with the <`link`> and css/common.css with the @import rule<br>
-- [x] Repair mistakes with the styles<br>
+- [x] Repair mistakes with the styles in css/common.css<br>
 - [x] Edit the css/common.css and the css/main.css files
 - [x] Edit the footer
 <br><br>
