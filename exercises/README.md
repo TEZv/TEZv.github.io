@@ -26,7 +26,7 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ├── lecture-02 <br>
 ├── _lecture-03_----> _#Task 3_ <br>
 └── README.md <br>
-The lecture-03 website: <br>
+The lecture-03 website: https://qalight-tezv-lecture-03.netlify.app/<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03
 <br>
 
