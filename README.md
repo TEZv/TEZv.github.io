@@ -27,4 +27,5 @@ Ukrainian/English
 This repository follows the <a href="https://github.com/couchjanus/web-dev-exercises/blob/main/LICENSE">MIT License</a>.
 
 
-### My />Web Developer</ projects from the QALight
+## My />Web Developer</ projects from the QALight
+### And this root also contains the files of the personal site

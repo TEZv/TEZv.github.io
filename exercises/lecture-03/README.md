@@ -21,7 +21,6 @@
 - [x] Repair mistakes with the declaration<br>
 - [x] Check how the --bgColor rule works<br>
 - [x] Check how the --bgColor rule works<br>
-- [x] Create css/main.css in the lecture-03<br>
 - [x] Create css/main.css and css/common.css in the root directory on the same level with the `exercises` folder<br>
 - [x] Turn on css/main.css with <link> and css/common.css with the @import rule <br>
 - [x] Repair mistakes with the styles<br>
