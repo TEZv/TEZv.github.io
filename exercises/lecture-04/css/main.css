@@ -8,11 +8,9 @@ h3 {
 main {
   color: #e60202;
 }
-
 .h2 {
   color: red;
 }
-
 .heading {
   color: green;
 }
@@ -23,11 +21,9 @@ main {
 ul > li {
   font-weight: bold;
 }
-
 section > p {
   color: red;
 }
-
 section p {
   font-size: 50px;
 }
