@@ -1,5 +1,5 @@
 # QALight
-## The Homework to the Lecture 3
+## The Homework to the Lecture 4
 
 - [x] Edit the project structure:<br>
 ├── exercises<br>
@@ -15,25 +15,23 @@
 ├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the index.html file <br>
-- [x] Repair mistakes with the declaration<br>
-- [x] Check how the --bgColor rule works in the <`style`><br>
-- [x] Create css/main.css and css/common.css in the root directory on the same level with the `exercises` folder<br>
-- [x] Turn on css/main.css with the <`link`> and css/common.css with the @import rule<br>
-- [x] Repair mistakes with the styles in css/common.css<br>
-- [x] Edit the css/common.css and the css/main.css files
-- [x] Edit the footer
+- [x] Edit css/main.css, add styles<br>
+- [x] Repeat 2 last steps a few times following the lecture tasks<br>
+- [x] Learn 4 types of the color styles: hex, rgb, hsl, rgba<br>
+- [x] Edit the index.html file <br>
+- [x] Edit css/main.css, learn hsla, learn font inheritance
 <br><br>
 
-**P.S.** 😃.
+**P.S.** 😄+☕.
 
 ## The Website
 Of the current task: <br>
-The lecture-03 website: https://qalight-tezv-lecture-03.netlify.app/<br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-03
+The lecture-04 website: https://qalight-tezv-lecture-04.netlify.app/<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-04
 <br />
 --> Netlify
 
 ## Deadline
-05.02.24 <br />
+07.02.24 <br />
 
-- [x] Done 95% of all requirements by 05.02.24
+- [x] Done 95% of all requirements by 07.02.24
