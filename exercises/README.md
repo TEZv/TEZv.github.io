@@ -66,5 +66,5 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 **P.S.** <br>
 I will create the folders in the `exercises` directory in the certain lecture if necessary to complete all tasks in the lecture😃, for example:<br>
 ├── exercises----><br>
-|   ├── lecture-NN----><br>
-|   |   ├── <b>`lecture-NN`_`task-N`</b>
+│   ├── lecture-NN----><br>
+│   │   ├── <b>`lecture-NN`_`task-N`</b>
