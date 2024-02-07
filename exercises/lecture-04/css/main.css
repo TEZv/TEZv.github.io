@@ -14,7 +14,6 @@ main {
 .heading {
   color: green;
 }
-
 /*<--------            THE TASK 2 SECTION        ---------------->*/
 
 /*<--------            THE TASK 3 SECTION        ---------------->*/
@@ -27,5 +26,25 @@ section > p {
 section p {
   font-size: 50px;
 }
-
 /*<--------            THE TASK 3 SECTION        ---------------->*/
+
+/*<--------            THE TASK 4 SECTION        ---------------->*/
+h1:first-of-type + h2 {
+  color: indigo;
+}
+p.first a {
+    color: green;
+  }
+p .first a {
+  color: green;
+}
+div ~ p {
+    color:salmon;
+  }
+/*<--------            THE TASK 4 SECTION        ---------------->*/
+
+/*<--------            THE TASK 5 SECTION        ---------------->
+
+
+
+<--------            THE TASK 5 SECTION        ---------------->*/
