@@ -4,7 +4,6 @@ h2,
 h3 {
   color: gray;
 }
-
 main {
   color: #e60202;
 }
@@ -33,14 +32,14 @@ h1:first-of-type + h2 {
   color: indigo;
 }
 p.first a {
-    color: green;
-  }
+  color: green;
+}
 p .first a {
   color: green;
 }
 div ~ p {
-    color:salmon;
-  }
+  color: salmon;
+}
 /*<--------            THE TASK 4 SECTION        ---------------->*/
 
 /*<--------            THE TASK 5 SECTION        ---------------->
@@ -54,37 +53,79 @@ div ~ p {
 4. Визначити ці кольори використовуючи альфа-канал, що задає прозорість.
 */
 .task_5 {
-    color: #a564ef;
-    background-color: #000000;
-    font-size: 20px;
-    font-weight: bold;
+  color: #a564ef;
+  background-color: #000000;
+  font-size: 20px;
+  font-weight: bold;
 }
 .hex {
-    background: linear-gradient(40deg, #000000, #0000FF, #00FF00, #FF0000, #FFFFFF, #FFFF00);
-    color: #c3ff69;
-    font-size: 20px;
+  background: linear-gradient(
+    40deg,
+    #000000,
+    #0000ff,
+    #00ff00,
+    #ff0000,
+    #ffffff,
+    #ffff00
+  );
+  color: #c3ff69;
+  font-size: 20px;
 }
 .rgb {
-    background: linear-gradient(-40deg, rgb(0, 0, 0), rgb(0, 0, 255), rgb(0, 255, 0), rgb(255, 0, 0), rgb(255, 255, 255), rgb(255, 255, 0));
-    color: #161d0c;
-    font-size: 20px;
+  background: linear-gradient(
+    -40deg,
+    rgb(0, 0, 0),
+    rgb(0, 0, 255),
+    rgb(0, 255, 0),
+    rgb(255, 0, 0),
+    rgb(255, 255, 255),
+    rgb(255, 255, 0)
+  );
+  color: #161d0c;
+  font-size: 20px;
 }
 .hsl {
-    background: linear-gradient(40deg, hsl(0, 0%, 0%), hsl(240, 100%, 50%), hsl(120, 100%, 50%), hsl(0, 100%, 50%), hsl(0, 0%, 100%), hsl(60, 100%, 50%));
-    color: #a31177;
-    font-size: 20px;
+  background: linear-gradient(
+    40deg,
+    hsl(0, 0%, 0%),
+    hsl(240, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(0, 100%, 50%),
+    hsl(0, 0%, 100%),
+    hsl(60, 100%, 50%)
+  );
+  color: #a31177;
+  font-size: 20px;
 }
 .rgba {
-    background: linear-gradient(-40deg, rgba(0, 0, 0, 0.999), rgba(0, 0, 255, 0.999), rgba(0, 255, 0, 0.999), rgba(255, 0, 0, 0.999), rgba(255, 255, 255, 0.999), rgba(255, 255, 0, 0.999));
-    color: #9c1da8;
-    font-size: 20px;
+  background: linear-gradient(
+    -40deg,
+    rgba(0, 0, 0, 0.999),
+    rgba(0, 0, 255, 0.999),
+    rgba(0, 255, 0, 0.999),
+    rgba(255, 0, 0, 0.999),
+    rgba(255, 255, 255, 0.999),
+    rgba(255, 255, 0, 0.999)
+  );
+  color: #9c1da8;
+  font-size: 20px;
 }
 /*<--------            THE TASK 5 SECTION        ---------------->*/
 
 /*<--------            THE TASK 6 SECTION        ---------------->*/
-
+.translucent-box {
+  background: hsla(0, 100%, 50%, 0.5);
+}
 /*<--------            THE TASK 6 SECTION        ---------------->*/
 
 /*<--------            THE TASK 7 SECTION        ---------------->*/
-
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 140%;
+}
+h1 {
+  font-size: 240%;
+}
 /*<--------            THE TASK 7 SECTION        ---------------->*/
