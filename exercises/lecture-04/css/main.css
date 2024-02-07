@@ -1,0 +1,35 @@
+/*<--------            THE TASK 2 SECTION        ---------------->*/
+h1,
+h2,
+h3 {
+  color: gray;
+}
+
+main {
+  color: #e60202;
+}
+
+.h2 {
+  color: red;
+}
+
+.heading {
+  color: green;
+}
+
+/*<--------            THE TASK 2 SECTION        ---------------->*/
+
+/*<--------            THE TASK 3 SECTION        ---------------->*/
+ul > li {
+  font-weight: bold;
+}
+
+section > p {
+  color: red;
+}
+
+section p {
+  font-size: 50px;
+}
+
+/*<--------            THE TASK 3 SECTION        ---------------->*/
