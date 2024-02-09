@@ -1,12 +1,41 @@
 /*<--------            THE TASK 3 SECTION        ---------------->*/
+body {
+  font-size: 16px;
+}
 div {
   font-size: 1em;
+  /* as <div> contains all text that wrap with 2 <span> - there's 1em = 16px for <div> 
+  /* 16px(div) * 16px(body-PARENT) = 1em(div)
+  div(16px) == body(16px)
+
+  /* span {} will be 1.6em so Outer <span> become:
+  25.6px(task req) / 16px(div-PARENT) = 1.6em(result)
+
+  inner <span> will be 1.6em from the parent <span> element
+  40.96px(task req) / 25.6px(span-PARENT) = 1.6em(result)
+
+  I conclusion: 
+  Outer <span> = 25.6px (1.6em from the parent div-PARENT)
+  inner <span> = 40.96px (1.6em from the parent span-PARENT)
+  */
 }
 span {
   font-size: 1.6em;
+  /* 25.6px(task req) / 16px(div-PARENT) = 1.6em(result)
+  40.96px(task req) / 25.6px(span-PARENT) = 1.6em(result) */
 }
+/* em - base to the PARENT element
 /*<--------            THE TASK 3 SECTION        ---------------->*/
 
 /*<--------            THE TASK 4 SECTION        ---------------->*/
-
+strong {
+  font-size: 1.6rem; /* 25.6px(task req) / 16px(body-ROOT) = 1.6rem(result) */
+}
+/* rem - base to the ROOT element
 /*<--------            THE TASK 4 SECTION        ---------------->*/
+
+/*<--------            THE TASK 5 SECTION        ---------------->*/
+ul {
+  list-style: square;
+}
+/*<--------            THE TASK 5 SECTION        ---------------->*/
