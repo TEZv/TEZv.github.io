@@ -16,10 +16,11 @@
 └── README.md<br>
 - [x] Visit Google Fonts https://fonts.google.com/ website<br>
 - [x] Edit the index.html file <br>
+- [x] Edit css/main.css<br>
 - [x] Repeat 2 last steps a few times following the lecture tasks<br>
-- [x] Learn 4 types of the color styles: hex, rgb, hsl, rgba<br>
-- [x] Edit the index.html file <br>
-- [x] Edit css/main.css, learn hsla, learn font inheritance
+- [x] Edit the index.html file of the personal website by adding <`link`> tag<br>
+- [x] Edit the css/main.css file of the personal website by adding @import rule<br>
+- [x] Edit the css/common.css file
 <br><br>
 
 **P.S.** 🤓.

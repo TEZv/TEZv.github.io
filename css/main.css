@@ -1,19 +1,43 @@
 @import url("./common.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-/*  THE TASK 8 SECTION  */
+/*  THE l3 TASK 8 SECTION  */
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+
+  /*  THE l5 TASK 9 SECTION  */
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  /*  THE l5 TASK 9 SECTION  */
 
   /*My edition*/
   text-align: center; /* Center the body element within its parent */
   /*My edition*/
 }
 
-/*My edition*/
-li {
-  list-style-type: none;
+/*  THE l5 TASK 9 SECTION  */
+h1,
+h2,
+h3 {
+  font-weight: 700;
 }
+h1 {
+  font-size: 1.45rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+.footer-social {
+  
+}
+.list-unstyled {
+  list-style: none;
+}
+/*  THE l5 TASK 9 SECTION  */
+
+
+/*My edition*/
 section {
   margin: 30px 40px;
 }

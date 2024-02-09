@@ -1,19 +1,27 @@
 /*    THE TASK 6 SECTION   */
 @import url("my-imported-styles.css");
 /* @import MUST be before the styles, i.e. --> "my-imported-styles.css" doesn't exist here */
+:root {
+  /*    THE l3 TASK 7 SECTION   */
+  --primary-text-color: #000;
+  --primary-bg-color: #fff;
+  /*    THE l3 TASK 7 SECTION   */
+
+  /*    THE l5 TASK 8 SECTION   */
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-font-size: 0.875rem;
+  /*    THE l5 TASK 8 SECTION   */
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /*    THE TASK 7 SECTION   */
-  html {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
-  }
-  
-  footer {
-    --footer-text-color: #fff;
-    --fuuter-bg-color: #000;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*    THE l3 TASK 7 SECTION   */
+footer {
+  --footer-text-color: #fff;
+  --fuuter-bg-color: #000;
+}
+/*    THE l3 TASK 7 SECTION   */
