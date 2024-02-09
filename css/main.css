@@ -1,5 +1,8 @@
 @import url("./common.css");
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/*  THE l5 TASK 7 SECTION  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+/*  THE l5 TASK 7 SECTION  */
 
 /*  THE l3 TASK 8 SECTION  */
 body {
@@ -15,8 +18,9 @@ body {
   text-align: center; /* Center the body element within its parent */
   /*My edition*/
 }
+/*  THE l3 TASK 8 SECTION  */
 
-/*  THE l5 TASK 9 SECTION  */
+/*  THE l5 TASK 9-10 SECTION  */
 h1,
 h2,
 h3 {
@@ -29,15 +33,29 @@ h2 {
   font-size: 1.3rem;
 }
 .footer-social {
-  
+  /*My edition*/
+  padding: 4px;
+  /*My edition*/
 }
 .list-unstyled {
   list-style: none;
+  /*My edition*/
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  /*My edition*/
 }
-/*  THE l5 TASK 9 SECTION  */
-
+/*My edition*/
+.list-unstyled > li a {
+  font-size: 1.5em;
+}
+/*My edition*/
+/*  THE l5 TASK 9-10 SECTION  */
 
 /*My edition*/
+li {
+  list-style: none;
+}
 section {
   margin: 30px 40px;
 }
@@ -46,5 +64,14 @@ iframe {
   height: 400px;
   padding: 10px;
   background: linear-gradient(40deg, yellow, blue);
+}
+.second_nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.nav_inner_container {
+  display: flex;
+  justify-content: space-around;
 }
 /*My edition*/

@@ -20,7 +20,7 @@
 - [x] Repeat 2 last steps a few times following the lecture tasks<br>
 - [x] Edit the index.html file of the personal website by adding <`link`> tag<br>
 - [x] Edit the css/main.css file of the personal website by adding @import rule<br>
-- [x] Edit the css/common.css file
+- [x] Edit the css/common.css file, css/main.css, index.html according to the lecture tasks 8-11
 <br><br>
 
 **P.S.** 🤓.
