@@ -60,7 +60,25 @@ ol :nth-child(2) {
 ol :nth-child(2n) {
   color: orange;
 }
-ol :nth-child(2n+6) {
+ol :nth-child(2n + 6) {
   color: orange;
 }
 /*<--------            THE TASK 8 SECTION        ---------------->*/
+
+/*<--------            THE TASK 9 SECTION        ---------------->*/
+.ua::before {
+  content: "Слава ";
+}
+/*<--------            THE TASK 9 SECTION        ---------------->*/
+
+/*<--------            THE TASK 10 SECTION        ---------------->*/
+.hero::after {
+  content: " Слава";
+}
+/*<--------            THE TASK 10 SECTION        ---------------->*/
+
+/*<--------            THE TASK 11 SECTION        ---------------->*/
+.cont::before {
+  content: "\0A7";
+}
+/*<--------            THE TASK 11 SECTION        ---------------->*/
