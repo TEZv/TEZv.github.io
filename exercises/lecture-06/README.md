@@ -1,5 +1,5 @@
 # QALight
-## The Homework to the Lecture 5
+## The Homework to the Lecture 6
 
 - [x] Edit the project structure:<br>
 ├── exercises<br>
@@ -17,16 +17,15 @@
 - [x] Edit the index.html file <br>
 - [x] Edit css/main.css<br>
 - [x] Repeat 2 last steps a few times following the lecture tasks<br>
-- [x] Edit the index.html file of the personal website by adding <`link`> tag<br>
-- [x] Edit the css/main.css file of the personal website by adding @import rule<br>
-- [x] Edit the css/common.css file, css/main.css, index.html according to the lecture tasks 8-11
+- [x] Practice with pseudoelements<br>
+- [x] Edit the css/main.css, index.html of the personal site (in the root dir) according to the lecture tasks 12-13
 <br><br>
 
 **P.S.** 🤓.
 
 ## The Website
 Of the current task: <br>
-The lecture-06 website: https://qalight-tezv-lecture-05.netlify.app/<br>
+The lecture-06 website: https://qalight-tezv-lecture-06.netlify.app/<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-06
 <br />
 --> Netlify
@@ -34,4 +33,4 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ## Deadline
 12.02.24 <br />
 
-- [x] Done 95% of all requirements by 12.02.24
+- [x] Done 90% of all requirements by 12.02.24
