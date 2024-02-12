@@ -17,5 +17,30 @@ ul li a:active {
 /*<--------            THE TASK 2 SECTION        ---------------->*/
 
 /*<--------            THE TASK 3 SECTION        ---------------->*/
-
+input:in-range {
+  color: rgba(0, 128, 0, 0.25);
+}
+input:out-of-range {
+  color: rgba(255, 0, 0, 0.25);
+}
 /*<--------            THE TASK 3 SECTION        ---------------->*/
+
+/*<--------            THE TASK 4 SECTION        ---------------->*/
+ul li:first-child {
+  color: orange;
+}
+/*<--------            THE TASK 4 SECTION        ---------------->*/
+
+/*<--------            THE TASK 5 SECTION        ---------------->*/
+ul :first-of-type {
+  color: orange;
+}
+/*<--------            THE TASK 5 SECTION        ---------------->*/
+
+/*<--------            THE TASK 6 SECTION        ---------------->*/
+
+/*<--------            THE TASK 6 SECTION        ---------------->*/
+
+/*<--------            THE TASK 7 SECTION        ---------------->*/
+
+/*<--------            THE TASK 7 SECTION        ---------------->*/
