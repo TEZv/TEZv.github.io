@@ -26,21 +26,41 @@ input:out-of-range {
 /*<--------            THE TASK 3 SECTION        ---------------->*/
 
 /*<--------            THE TASK 4 SECTION        ---------------->*/
-ul li:first-child {
+ul.task_4 li:first-child {
   color: orange;
 }
 /*<--------            THE TASK 4 SECTION        ---------------->*/
 
 /*<--------            THE TASK 5 SECTION        ---------------->*/
-ul :first-of-type {
+ul.task_5 :first-of-type {
   color: orange;
 }
 /*<--------            THE TASK 5 SECTION        ---------------->*/
 
 /*<--------            THE TASK 6 SECTION        ---------------->*/
-
+ul.task_6 :last-of-type {
+  color: orange;
+}
 /*<--------            THE TASK 6 SECTION        ---------------->*/
 
 /*<--------            THE TASK 7 SECTION        ---------------->*/
-
+ul.task_7 li:not(.first-item) {
+  color: orange;
+}
+ul.task_7 li:not(.first-item):not(:last-of-type) {
+  color: black;
+  background-color: yellow;
+}
 /*<--------            THE TASK 7 SECTION        ---------------->*/
+
+/*<--------            THE TASK 8 SECTION        ---------------->*/
+ol :nth-child(2) {
+  color: orange;
+}
+ol :nth-child(2n) {
+  color: orange;
+}
+ol :nth-child(2n+6) {
+  color: orange;
+}
+/*<--------            THE TASK 8 SECTION        ---------------->*/
