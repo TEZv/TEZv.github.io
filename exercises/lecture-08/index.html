@@ -28,7 +28,7 @@
         border: dashed 2px green;
         /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
         /*-- full_width = 300px + (10px*2sides -> | |) + (2px*2sides -> | |) --*/
-        
+
         /*-- Width is: 324px --*/
         /* --------            THE TASK 2 SECTION        ---------------->*/
       }
@@ -44,80 +44,99 @@
       }
       /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
       /*-- full_width = 200px + (20px*2sides -> | |) + (8px*2sides -> | |) --*/
-      
+
       /*-- Answer: full_height = height + (padding*2sides) + (border*2sides)--*/
       /*-- full_height = 100px + (20px*2sides -> __ --) + (8px*2sides -> __ --) --*/
-      
+
       /*-- Width is: 256px --*/
       /*-- Height is: 156px --*/
       /* --------            THE TASK 3 SECTION        ---------------->*/
-    
-    /* --------            THE TASK 4 SECTION        ---------------->*/
-    .second-box {
-      width: 200px;
-      height: 100px;
-      border: 8px solid blue;
-      background: yellow;
-    }
-    /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
-    /*-- full_width = 200px + (0px*2sides -> | |) + (8px*2sides -> | |) --*/
-    
-    /*-- Answer: full_height = height + (padding*2sides) + (border*2sides)--*/
-    /*-- full_height = 100px + (0px*2sides -> __ --) + (8px*2sides -> __ --) --*/
-    
-    /*-- P.s.: If there's no {padding} rule then -> it doesn't exist and == 0px
+
+      /* --------            THE TASK 4 SECTION        ---------------->*/
+      .second-box {
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        background: yellow;
+      }
+      /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
+      /*-- full_width = 200px + (0px*2sides -> | |) + (8px*2sides -> | |) --*/
+
+      /*-- Answer: full_height = height + (padding*2sides) + (border*2sides)--*/
+      /*-- full_height = 100px + (0px*2sides -> __ --) + (8px*2sides -> __ --) --*/
+
+      /*-- P.s.: If there's no {padding} rule then -> it doesn't exist and == 0px
     
     /*-- Width is: 216px --*/
-    /*-- Height is: 116px --*/
-    /* --------            THE TASK 4 SECTION        ---------------->*/
-    
-    /* --------            THE TASK 5 SECTION        ---------------->*/
-    div {
-      box-sizing: content-box;
-      width: 200px;
-      border: 8px solid blue;
-      padding: 20px;
-      background: yellow;
-    }
-    /*-- Answer: elem_width = width + (padding*2sides) + (border*2sides)--*/
-    /*-- elem_width = 200px + (20px*2sides -> | |) + (8px*2sides -> | |) --*/
-    
-    /*-- P.s.: {box-sizing: content-box} calculates 
+      /*-- Height is: 116px --*/
+      /* --------            THE TASK 4 SECTION        ---------------->*/
+
+      /* --------            THE TASK 5 SECTION        ---------------->*/
+      div {
+        box-sizing: content-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+      }
+      /*-- Answer: elem_width = width + (padding*2sides) + (border*2sides)--*/
+      /*-- elem_width = 200px + (20px*2sides -> | |) + (8px*2sides -> | |) --*/
+
+      /*-- P.s.: {box-sizing: content-box} calculates 
     the width and height of an element excluding padding and border. 
 
     Padding and border are + to the specified width and height, 
     making the total dimensions larger than what's explicitly set.
     
     /*-- Width of the div content is: 200px --*/
-    /*-- Width of the div elem is: 256px --*/
-    /* --------            THE TASK 5 SECTION        ---------------->*/
+      /*-- Width of the div elem is: 256px --*/
+      /* --------            THE TASK 5 SECTION        ---------------->*/
 
-    /* --------            THE TASK 6 SECTION        ---------------->*/
-    div {
-      box-sizing: border-box;
-      width: 200px;
-      border: 8px solid blue;
-      padding: 20px;
-      background: yellow;
-    }
-    /*-- Answer: content_width = width - (padding*2sides) - (border*2sides)--*/
-    /*-- content_width = 200px - (20px*2sides -> | |) - (8px*2sides -> | |) --*/
-    
-    /*-- P.s.: {box-sizing: border-box} can be calculated 
+      /* --------            THE TASK 6 SECTION        ---------------->*/
+      div {
+        box-sizing: border-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+      }
+      /*-- Answer: content_width = width - (padding*2sides) - (border*2sides)--*/
+      /*-- content_width = 200px - (20px*2sides -> | |) - (8px*2sides -> | |) --*/
+
+      /*-- P.s.: {box-sizing: border-box} can be calculated 
     by subtracting the padding and border from the specified width
     
     /*-- Width of the div content is: 144px --*/
-    /*-- Width of the div elem is: 200px --*/
-    /* --------            THE TASK 6 SECTION        ---------------->*/
-  
-    /* --------            THE TASK 7 SECTION        ---------------->*/
-    div {
-      border: 10px dotted black;
-      padding: 15px;
-      background: lightblue;
-    }
-    /* --------            THE TASK 7 SECTION        ---------------->*/
-  </style>
+      /*-- Width of the div elem is: 200px --*/
+      /* --------            THE TASK 6 SECTION        ---------------->*/
+
+      /* --------            THE TASK 7 SECTION        ---------------->*/
+      div {
+        border: 10px dotted black;
+        padding: 15px;
+        background: lightblue;
+      }
+      #example1 {
+        background-clip: border-box;
+      }
+      #example2 {
+        background-clip: padding-box;
+      }
+      #example3 {
+        background-clip: content-box;
+      }
+      /* --------            THE TASK 7 SECTION        ---------------->*/
+
+      /* --------            THE TASK 8 SECTION        ---------------->*/
+      h1 {
+        display: inline-block;
+        /* block view */
+        max-width: 10%;
+        /* max width - 
+      if there's not enough space for the content - it goes downside */
+      }
+      /* --------            THE TASK 8 SECTION        ---------------->*/
+    </style>
   </head>
   <body>
     <!--------            THE TASK 1-2 SECTION        ---------------->
@@ -131,20 +150,35 @@
     <!--------            THE TASK 4 SECTION        ------------------>
     <div class="second-box"></div>
     <!--------            THE TASK 4 SECTION        ------------------>
-  
+
     <!--------            THE TASK 7 SECTION        ------------------>
     <div id="example1">
-      <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+      <p>
+        Правило для example1: фон всередині елемента має простягатися за межі
+        рамки.
+      </p>
     </div>
-  
+
     <div id="example2">
-      <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+      <p>
+        Правило для example2: фон всередині елемента має простягатися до
+        внутрішнього краю рамки.
+      </p>
     </div>
-  
+
     <div id="example3">
-      <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+      <p>
+        Правило для example3: фон всередині елемента має простягатися до краю
+        поля вмісту.
+      </p>
     </div>
     <!--------            THE TASK 7 SECTION        ------------------>
+
+    <!--------            THE TASK 8 SECTION        ------------------>
+    <h1><span>Awesome article</span></h1>
+    <!--------            THE TASK 8 SECTION        ------------------>
+
+    <!--- ? for some reason there's one more div elem that doesn't even exist --->
   </body>
 </html>
 <!--------            THE TASK 1 SECTION        ---------------->
