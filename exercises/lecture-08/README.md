@@ -13,10 +13,11 @@
 ├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the index.html file, +.html structure<br>
-- [x] Edit <`styles`> tag<br>
-- [x] Add .classNN {background: some-gradient()} rules to the defined classes in the internal <`styles`> tag<br>
-- [x] Practice with svg images -> 2-5 tasks<br>
-- [x] Create the rectangle, circle, clock, star svg images
+- [x] Shorten padding and margin rules in <`styles`> tag<br>
+- [x] Calculate width and the height in the 2-6 tasks <br>
+- [x] Find out the difference between {box-sizing: border-box/content-box} <br>
+- [x] Practice with background-clip rule <br>
+- [x] Practice with dynamic width and display: inline-block <br>
 <br><br>
 
 **P.S.** 😸.
