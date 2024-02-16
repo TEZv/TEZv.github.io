@@ -5,8 +5,6 @@
 ├── exercises<br>
 │   ├── lecture-NN<br>
 │   ├── lecture-07<br>
-│   │   ├── css<br>
-│   │   │   └── main.css<br>
 │   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
@@ -14,14 +12,13 @@
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
-- [x] Edit the index.html file <br>
-- [x] Edit css/main.css<br>
-- [x] Repeat 2 last steps a few times following the lecture tasks<br>
-- [x] Practice with pseudoelements<br>
-- [x] Edit the css/main.css, index.html of the personal site (in the root dir) according to the lecture tasks 12-13
+- [x] Edit the index.html file, +.html structure <br>
+- [x] Add .classNN {background: some-gradient()} rules to the defined classes in the internal <`styles`> tag<br>
+- [x] Practice with svg images -> 2-5 tasks<br>
+- [x] Create the rectangle, circle, clock, star svg images
 <br><br>
 
-**P.S.** 🤓.
+**P.S.** 😸.
 
 ## The Website
 Of the current task: <br>
@@ -33,4 +30,4 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ## Deadline
 14.02.24 <br />
 
-- [x] Done 95% of all requirements by 14.02.24
+- [x] Done 95% of all requirements by 16.02.24
