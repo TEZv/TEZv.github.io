@@ -28,6 +28,7 @@
         border: dashed 2px green;
         /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
         /*-- full_width = 300px + (10px*2sides -> | |) + (2px*2sides -> | |) --*/
+        
         /*-- Width is: 324px --*/
         /* --------            THE TASK 2 SECTION        ---------------->*/
       }
@@ -64,7 +65,7 @@
     /*-- Answer: full_height = height + (padding*2sides) + (border*2sides)--*/
     /*-- full_height = 100px + (0px*2sides -> __ --) + (8px*2sides -> __ --) --*/
     
-    /*-- P.s. If there's no {padding} rule than -> it doesn't exist and == 0px
+    /*-- P.s.: If there's no {padding} rule then -> it doesn't exist and == 0px
     
     /*-- Width is: 216px --*/
     /*-- Height is: 116px --*/
@@ -78,16 +79,35 @@
       padding: 20px;
       background: yellow;
     }
+    /*-- Answer: elem_width = width + (padding*2sides) + (border*2sides)--*/
+    /*-- elem_width = 200px + (20px*2sides -> | |) + (8px*2sides -> | |) --*/
+    
+    /*-- P.s.: {box-sizing: content-box} calculates 
+    the width and height of an element excluding padding and border. 
+
+    Padding and border are + to the specified width and height, 
+    making the total dimensions larger than what's explicitly set.
+    
+    /*-- Width of the div content is: 200px --*/
+    /*-- Width of the div elem is: 256px --*/
     /* --------            THE TASK 5 SECTION        ---------------->*/
 
     /* --------            THE TASK 6 SECTION        ---------------->*/
     div {
-      box-sizing:border-box;
+      box-sizing: border-box;
       width: 200px;
       border: 8px solid blue;
       padding: 20px;
       background: yellow;
     }
+    /*-- Answer: content_width = width - (padding*2sides) - (border*2sides)--*/
+    /*-- content_width = 200px - (20px*2sides -> | |) - (8px*2sides -> | |) --*/
+    
+    /*-- P.s.: {box-sizing: border-box} can be calculated 
+    by subtracting the padding and border from the specified width
+    
+    /*-- Width of the div content is: 144px --*/
+    /*-- Width of the div elem is: 200px --*/
     /* --------            THE TASK 6 SECTION        ---------------->*/
   
     /* --------            THE TASK 7 SECTION        ---------------->*/
