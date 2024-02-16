@@ -50,16 +50,81 @@
       /*-- Width is: 256px --*/
       /*-- Height is: 156px --*/
       /* --------            THE TASK 3 SECTION        ---------------->*/
-    </style>
+    
+    /* --------            THE TASK 4 SECTION        ---------------->*/
+    .second-box {
+      width: 200px;
+      height: 100px;
+      border: 8px solid blue;
+      background: yellow;
+    }
+    /*-- Answer: full_width = width + (padding*2sides) + (border*2sides)--*/
+    /*-- full_width = 200px + (0px*2sides -> | |) + (8px*2sides -> | |) --*/
+    
+    /*-- Answer: full_height = height + (padding*2sides) + (border*2sides)--*/
+    /*-- full_height = 100px + (0px*2sides -> __ --) + (8px*2sides -> __ --) --*/
+    
+    /*-- P.s. If there's no {padding} rule than -> it doesn't exist and == 0px
+    
+    /*-- Width is: 216px --*/
+    /*-- Height is: 116px --*/
+    /* --------            THE TASK 4 SECTION        ---------------->*/
+    
+    /* --------            THE TASK 5 SECTION        ---------------->*/
+    div {
+      box-sizing: content-box;
+      width: 200px;
+      border: 8px solid blue;
+      padding: 20px;
+      background: yellow;
+    }
+    /* --------            THE TASK 5 SECTION        ---------------->*/
+
+    /* --------            THE TASK 6 SECTION        ---------------->*/
+    div {
+      box-sizing:border-box;
+      width: 200px;
+      border: 8px solid blue;
+      padding: 20px;
+      background: yellow;
+    }
+    /* --------            THE TASK 6 SECTION        ---------------->*/
+  
+    /* --------            THE TASK 7 SECTION        ---------------->*/
+    div {
+      border: 10px dotted black;
+      padding: 15px;
+      background: lightblue;
+    }
+    /* --------            THE TASK 7 SECTION        ---------------->*/
+  </style>
   </head>
   <body>
     <!--------            THE TASK 1-2 SECTION        ---------------->
     <div class="box"></div>
     <!--------            THE TASK 1-2 SECTION        ---------------->
 
-    <!--------            THE TASK 3 SECTION        ---------------->
+    <!--------            THE TASK 3 SECTION        ------------------>
     <div class="first-box"></div>
-    <!--------            THE TASK 3 SECTION        ---------------->
+    <!--------            THE TASK 3 SECTION        ------------------>
+
+    <!--------            THE TASK 4 SECTION        ------------------>
+    <div class="second-box"></div>
+    <!--------            THE TASK 4 SECTION        ------------------>
+  
+    <!--------            THE TASK 7 SECTION        ------------------>
+    <div id="example1">
+      <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+    </div>
+  
+    <div id="example2">
+      <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+    </div>
+  
+    <div id="example3">
+      <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+    </div>
+    <!--------            THE TASK 7 SECTION        ------------------>
   </body>
 </html>
 <!--------            THE TASK 1 SECTION        ---------------->
