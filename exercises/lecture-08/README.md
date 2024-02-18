@@ -17,7 +17,7 @@
 - [x] Calculate width and the height in the 2-6 tasks <br>
 - [x] Find out the difference between {box-sizing: border-box/content-box} <br>
 - [x] Practice with background-clip rule <br>
-- [x] Practice with dynamic width and display: inline-block <br>
+- [x] Practice with dynamic width and display: inline-block
 <br><br>
 
 **P.S.** 😸.
