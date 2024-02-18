@@ -13,14 +13,12 @@
 ├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the index.html file, +.html structure<br>
-- [x] Shorten padding and margin rules in <`styles`> tag<br>
-- [x] Calculate width and the height in the 2-6 tasks <br>
-- [x] Find out the difference between {box-sizing: border-box/content-box} <br>
-- [x] Practice with background-clip rule <br>
-- [x] Practice with dynamic width and display: inline-block <br>
+- [x] Add the img {float: right} rule to the <`styles`> tag<br>
+- [x] Add the paragraphs to the index.html file, practice with the positions (static, relative, absolute, sticky), z-index<br>
+- [ ] 
 <br><br>
 
-**P.S.** 😸.
+**P.S.** 😸. 
 
 ## The Website
 Of the current task: <br>
