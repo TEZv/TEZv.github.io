@@ -21,16 +21,54 @@
       /* --------            THE TASK 2 SECTION        ---------------->*/
       .static-position {
         background: yellow;
-        position: static; /*<- можна було не вказувати, оскільки використовується за замовчуванням*/
+        position: static; /* by default */
       }
-      
+      .relative-position {
+        position: relative;
+        background: red;
+        top: 130px;
+        left: 130px;
+      }
+      .absolute-position {
+        position: absolute;
+        background: blueviolet;
+        top: 30px;
+        left: 30px;
+      }
+      p:nth-of-type(1) {
+        position: absolute;
+        background: lime;
+        top: 10px;
+        right: 30px;
+        /* +the z-index rule to make the element nearly to the user */
+        z-index: 100;
+        /* +the z-index rule to make the element nearly to the user */
+      }
       /* --------            THE TASK 2 SECTION        ---------------->*/
+
+      /* --------            THE TASK 3 SECTION        ---------------->*/
+
+      h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+      }
+      /* --------            THE TASK 3 SECTION        ---------------->*/
+
+      /* --------            THE TASK 4 SECTION        ---------------->*/
+
+      /* --------            THE TASK 4 SECTION        ---------------->*/
     </style>
   </head>
 
   <body>
     <!--------            THE TASK 1 SECTION        ---------------->
+    <!--------            THE TASK 3 SECTION        ---------------->
+    <!-- h1 was added in the task 1 but there's a change in the task 3 -->
     <h1>Управління потоком</h1>
+    <!--------            THE TASK 3 SECTION        ---------------->
     <p>
       Examples of the CSS float Property Below are some examples of how the CSS
       float property works.
@@ -40,8 +78,8 @@
 
     <!--------            THE TASK 2 SECTION        ---------------->
     <p class="absolute-position">
-      Статичне позиціонування є типовим для кожного елемента. Це просто означає,
-      помістіть елемент у звичайне положення в документі.
+      Абсолютне позиціонування виносить елемент із звичайного потоку документа,
+      фіксуючи його положення відносно батьківського елемента або документа.
     </p>
     <p class="static-position">
       Статичне позиціонування є типовим для кожного елемента. Це просто означає,
@@ -55,10 +93,6 @@
       дозволяє змінювати позицію елемента без зміни макету.
     </p>
     <!--------            THE TASK 2 SECTION        ---------------->
-
-    <!--------            THE TASK 3 SECTION        ---------------->
-
-    <!--------            THE TASK 3 SECTION        ---------------->
   </body>
 </html>
 <!--------            THE TASK 1 SECTION        ---------------->
