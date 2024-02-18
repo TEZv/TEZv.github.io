@@ -14,7 +14,7 @@
 └── README.md<br>
 - [x] Edit the index.html file, +.html structure<br>
 - [x] Add the img {float: right} rule to the <`styles`> tag<br>
-- [x] Add the paragraphs to the index.html file, practice with the positions (static, relative, absolute, sticky), z-index<br>
+- [x] Add the paragraphs to the index.html file, practice with the positions (static, relative, absolute, sticky), z-index
 <br><br>
 
 **P.S.** 😸. 
