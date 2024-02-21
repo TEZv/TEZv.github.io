@@ -26,8 +26,16 @@
         flex-grow: 3;
         /*-- TASK 1 ADDED --*/
 
-        /* TOTAL flex-grow of ELEMENTS: 3+1=4 */
-        /* 700px - 100px = 600px - (600px * (3/4)) = 400px */
+        /*  all flex-grow values is 4 
+        (3 for .item-blue + 1 for .item-green). */
+
+        /* the total available space for growth is:
+        700px - 100px * 3 = 400px
+
+        growing for .item-blue is:
+        400px * 3/4 = 300px
+
+        SO:initial width 100px + added width 300px
         /* width - 400px */
       }
       .item-orange {
@@ -40,8 +48,17 @@
         flex-grow: 1;
         /*-- TASK 1 ADDED --*/
 
-        /* TOTAL flex-grow of ELEMENTS: 3+1=4 */
-        /* 700px - 100px = 600px - (600px - 400px) = 200px */
+        /*  all flex-grow values is 4 
+        (3 for .item-blue + 1 for .item-green). */
+
+        /* the total available space for growth is:
+        700px - 100px * 3 = 400px
+
+        growing for .item-blue is:
+        400px * 1/4 = 100px
+
+        SO:initial width 100px + added width 100px
+        /* width - 200px */
       }
       .item {
         color: white;
