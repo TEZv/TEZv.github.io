@@ -3,9 +3,9 @@
 
 ## **Assessment section**
 
-| Task 1   | Task 2   | Task 3 | Task 4 | Task 5 | Task 6 | Task 7 | Task 8 | Task 9 | Task 10|
-|----------|----------|--------|--------|--------|--------|--------|--------|--------|--------|
-| ?        |  ?       |  100   |  70    | 100    | 100    |  100   |  90    |  100   | ...    |
+| Task 1 | Task 2 | Task 3 | Task 4 | Task 5 | Task 6 | Task 7 | Task 8 | Task 9 | Task 10|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| ?      |  ?     |  100   |  70    | 100    | 100    |  100   |  90    |  100   | ...    |
 
 <br>
 
@@ -25,12 +25,15 @@
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 |        |        |        |        |        |        |        |        |        | ...    |
 
+## **#The Personal Website**
+https://tezv.github.io/
+
 ## **#Task 1**
 ### `Duration`: 29.01.24-31.01.24
 .<br>
 ├── _lecture-01_ ----> _#Task 1_ <br>
 └── README.md <br>
-The lecture-01 website: https://tezv.github.io/ <br>
+The lecture-01 website: https://qalight-tezv-lecture-01.netlify.app/ <br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-01
 
 ## **#Task 2**
