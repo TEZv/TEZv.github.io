@@ -1,6 +1,28 @@
 # *My Homeworks from *QALight 
 ## My />Web Developer</ projects from the QALight
 
+| Task 1 | Task 2 | Task 3 | Task 4 | Task 5 | Task 6 | Task 7 | Task 8 | Task 9 | Task 10|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| ?      |  ?     |  100   |  70    | 100    | 100    |  100   |  90    |  100   | ...    |
+
+<br>
+
+| Task 11| Task 12| Task 13| Task 14| Task 15| Task 16| Task 17| Task 18| Task 19| Task 20|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| ?      |  ?     |  80    |  30    | ...    | ?      |  ?     |  80    |  30    | ...    |
+
+<br>
+
+| Task 21| Task 22| Task 23| Task 24| Task 25| Task 26| Task 27| Task 28| Task 29| Task 30|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| ?      |  ?     |  80    |  30    | ...    | ?      |  ?     |  80    |  30    | ...    |
+
+<br>
+
+| Task 31| Task 32| Task 33| Task 34| Task 35| Task 36| Task 37| Task 38| Task 39| Task 40|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| ?      |  ?     |  80    |  30    | ...    | ?      |  ?     |  80    |  30    | ...    |
+
 ## **#Task 1**
 ### `Duration`: 29.01.24-31.01.24
 .<br>
@@ -95,6 +117,40 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 The lecture-09 website: https://qalight-tezv-lecture-09.netlify.app/<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-09
 <br>
+
+## **#Task 10**
+### `Duration`: 19.02.24 - 21.02.24
+.<br>
+├── ....<br>
+├── _lecture-10_ ----> _#Task 10_ <br>
+└── README.md <br>
+The lecture-10 website: https://qalight-tezv-lecture-10.netlify.app/<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-10
+<br>
+
+## **#Task 11**
+### `Duration`: 21.02.24 - 23.02.24
+.<br>
+├── ....<br>
+├── lecture-10 <br>
+├── _lecture-11_ ----> _#Task 11_ <br>
+└── README.md <br>
+The lecture-11 website: https://qalight-tezv-lecture-11.netlify.app/<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-11
+<br>
+
+## **#Task 12**
+### `Duration`: 23.02.24 - 26.02.24
+.<br>
+├── ....<br>
+├── lecture-10 <br>
+├── lecture-11 <br>
+├── _lecture-12_ ----> _#Task 12_ <br>
+└── README.md <br>
+The lecture-12 website: https://qalight-tezv-lecture-12.netlify.app/<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-12
+<br>
+
 
 
 **P.S.** <br>
