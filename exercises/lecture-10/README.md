@@ -13,11 +13,10 @@
 ├── LICENSE<br>
 └── README.md<br>
 - [x] Edit the index.html file, +.html structure<br>
-- [x] Shorten padding and margin rules in <`styles`> tag<br>
-- [x] Calculate width and the height in the 2-6 tasks <br>
-- [x] Find out the difference between {box-sizing: border-box/content-box} <br>
-- [x] Practice with background-clip rule <br>
-- [x] Practice with dynamic width and display: inline-block
+- [x] Set the flex-grow rules in the .blue and .green classes in <`styles`> tag<br>
+- [x] Calculate the width of the .item-green, .item-orange and .item-blue classes<br>
+- [x] Set the justify-content and align-items rules to the .nav class in the `navbar` folder -> .css<br>
+- [x] Add the .card class to the `layout` folder -> .css and set var(--min) variable rule to it from the .flexbox class<br>
 <br><br>
 
 **P.S.** 😸.
@@ -25,7 +24,7 @@
 ## The Website
 Of the current task: <br>
 The lecture-10 website: https://qalight-tezv-lecture-10.netlify.app/<br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-08
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-10
 <br />
 --> Netlify
 
