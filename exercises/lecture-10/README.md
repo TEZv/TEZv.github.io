@@ -16,7 +16,7 @@
 - [x] Set the flex-grow rules in the .blue and .green classes in <`styles`> tag<br>
 - [x] Calculate the width of the .item-green, .item-orange and .item-blue classes<br>
 - [x] Set the justify-content and align-items rules to the .nav class in the `navbar` folder -> .css<br>
-- [x] Add the .card class to the `layout` folder -> .css and set var(--min) variable rule to it from the .flexbox class<br>
+- [x] Add the .card class to the `layout` folder -> .css and set var(--min) variable rule to it from the .flexbox class
 <br><br>
 
 **P.S.** 😸.
