@@ -1,0 +1,18 @@
+/* TASK 2 SECTION */
+.grid {
+  --min: 30ch;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, var(--min)));
+  gap: 1rem;
+}
+/* +TASK 2 SECTION */
+.card {
+  min-width: var(--min);
+}
+/* +TASK 2 SECTION */
+body {
+  --padding: 5vw;
+  --max-width: 180ch;
+}
+/* TASK 2 SECTION */
