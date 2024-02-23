@@ -1,3 +1,4 @@
+/* TASK 2 SECTION */
 * {
   box-sizing: border-box;
 }
@@ -10,10 +11,10 @@ body {
   background-color: #333;
   color: white;
   display: flex;
-  /* TASK 2 SECTION */
+  /* +TASK 2 SECTION */
   justify-content: space-between;
   align-items: center;
-  /* TASK 2 SECTION */
+  /* +TASK 2 SECTION */
   padding: 0 0.5rem;
 }
 
@@ -35,3 +36,4 @@ body {
   color: inherit;
   text-decoration: none;
 }
+/* TASK 2 SECTION */
