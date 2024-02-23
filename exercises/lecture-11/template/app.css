@@ -1,9 +1,10 @@
 /* TASK 2 SECTION */
 .grid {
   --min: 30ch;
-
   display: grid;
+  /* +TASK 2 SECTION */
   grid-template-columns: repeat(auto-fit, minmax(100%, var(--min)));
+  /* +TASK 2 SECTION */
   gap: 1rem;
 }
 /* +TASK 2 SECTION */
