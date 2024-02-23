@@ -1,0 +1,19 @@
+body {
+  --padding: 5vw;
+  --max-width: 180ch;
+}
+
+.flexbox {
+  --min: 30ch;
+  display: flex;
+  flex-wrap: wrap;
+  /* TASK 3 SECTION */
+  justify-content: space-around;
+  /* TASK 3 SECTION */
+  gap: 1rem;
+}
+/* TASK 3 SECTION */
+.card {
+  flex: var(--min);
+}
+/* TASK 3 SECTION */
