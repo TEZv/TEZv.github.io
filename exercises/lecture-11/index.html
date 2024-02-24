@@ -61,6 +61,9 @@
       main div:nth-of-type(12) {
         background-color: #38c931;
       }
+      main div:nth-of-type(13) {
+        background-color: #53e74b;
+      }
       main {
         margin: 2vw 0;
       }
@@ -150,11 +153,19 @@
 
       /* --------            THE TASK 1.12 SECTION        ---------------->*/
       .twelve {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+      }
+      /* --------            THE TASK 1.12 SECTION        ---------------->*/
+
+      /* --------            THE TASK 1.13 SECTION        ---------------->*/
+      .thirteenth {
         grid-template-columns: repeat(2, auto);
         justify-content: space-evenly;
         align-content: space-evenly;
       }
-      /* --------            THE TASK 1.12 SECTION        ---------------->*/
+      /* --------            THE TASK 1.13 SECTION        ---------------->*/
       
       /* --------            THE TASK 1 SECTION        ---------------->*/
     </style>
@@ -274,13 +285,21 @@
       </div>
       <!--------            THE TASK 1.11 SECTION        ---------------->
 
-      <h2>12 justify-content: space-evenly; align-content: space-evenly;</h2>
+      <h2>12 gap: 10px;</h2>
       <!--------            THE TASK 1.12 SECTION        ---------------->
       <div class="twelve grid">
         <div>auto</div>
         <div>auto</div>
       </div>
       <!--------            THE TASK 1.12 SECTION        ---------------->
+
+      <h2>13 justify-content: space-evenly; align-content: space-evenly;</h2>
+      <!--------            THE TASK 1.13 SECTION        ---------------->
+      <div class="thirteenth grid">
+        <div>auto</div>
+        <div>auto</div>
+      </div>
+      <!--------            THE TASK 1.13 SECTION        ---------------->
     </main>
   </body>
 </html>

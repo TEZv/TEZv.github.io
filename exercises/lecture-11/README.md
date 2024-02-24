@@ -12,7 +12,7 @@
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
-- [x] Practice with the grid structures - 12 tasks<br>
+- [x] Practice with the grid structures - 13 tasks<br>
 - [x] Practice with the grid in the `layout` folder -> .css<br>
 - [x] Practice with the grid in the `template` folder -> .css
 <br><br>
@@ -29,4 +29,4 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 ## Deadline
 23.02.24 <br />
 
-- [x] Done 95% of all requirements by 23.02.24
+- [x] Done 95% of all requirements by 24.02.24
