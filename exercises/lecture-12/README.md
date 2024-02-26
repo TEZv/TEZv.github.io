@@ -12,9 +12,9 @@
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
-- [x] <br>
-- [x] <br>
-- [x] 
+- [x] Practice with the clamp() and calc() functions - 5 tasks <br>
+- [x] Practice with the mobile-first @media in the `grid-areas` folder -> .css <br>
+- [x] Practice with the mobile-first @media in the `navbar` folder -> .css
 <br><br>
 
 **P.S.** 😸.
