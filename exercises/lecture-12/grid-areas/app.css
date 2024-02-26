@@ -1,0 +1,27 @@
+/* TASK 3 SECTION */
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  /* +TASK 3 SECTION */
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+    "h h h"
+    "m m s"
+    "f f f";
+    /* +TASK 3 SECTION */
+}
+/* +TASK 3 SECTION */
+.header {
+  grid-area: h;
+}
+.main {
+  grid-area: m;
+}
+.sidebar {
+  grid-area: s;
+}
+.footer {
+  grid-area: f;
+}
+/* +TASK 3 SECTION */
+/* TASK 3 SECTION */
