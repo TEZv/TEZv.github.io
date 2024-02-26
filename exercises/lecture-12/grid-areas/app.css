@@ -3,10 +3,12 @@
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
+  /* -TASK 2 SECTION */
       'header'
       'sidebar'
       'main'
       'footer';
+  /* -TASK 2 SECTION */
 }
 .header {
   grid-area: header;
@@ -20,6 +22,7 @@
 .footer {
   grid-area: footer;
 }
+/* +TASK 2 SECTION */
 @media (min-width: 786px) {
   .grid-container {
     grid-template-areas:
@@ -28,4 +31,5 @@
       "footer footer footer";
   }
 }
+/* +TASK 2 SECTION */
 /* TASK 2 SECTION */
