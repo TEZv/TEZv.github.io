@@ -6,11 +6,11 @@
 │   ├── lecture-NN<br>
 │   ├── lecture-13<br>
 │   │   ├── tables<br>
-│   │   │      ├── app.css<br>
-│   │   │      ├── index.html<br>
+│   │   │     ├── app.css<br>
+│   │   │     ├── index.html<br>
 │   │   ├── forms<br>
-│   │   │      ├── app.css<br>
-│   │   │      ├── index.html<br>
+│   │   │     ├── app.css<br>
+│   │   │     ├── index.html<br>
 │   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
@@ -18,6 +18,7 @@
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
+
   `tables` folder --> <br>
 - [x]  Add styles to **td, th {}**, **th {}**<br>
 - [x] Add styles to **table tr:nth-child(odd)**, **@media (max-width: 50rem) {}**
