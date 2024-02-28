@@ -6,11 +6,11 @@
 │   ├── lecture-NN<br>
 │   ├── lecture-13<br>
 │   │   ├── tables<br>
-│   │   │     ├── app.css<br>
-│   │   │     ├── index.html<br>
+│   │   │      ├── app.css<br>
+│   │   │      ├── index.html<br>
 │   │   ├── forms<br>
-│   │   │     ├── app.css<br>
-│   │   │     ├── index.html<br>
+│   │   │      ├── app.css<br>
+│   │   │      ├── index.html<br>
 │   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
@@ -18,15 +18,15 @@
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
-- [x] `tables` folder --> <br>
+  `tables` folder --> <br>
 - [x]  Add styles to **td, th {}**, **th {}**<br>
 - [x] Add styles to **table tr:nth-child(odd)**, **@media (max-width: 50rem) {}**
 <br><br>
 
-- [x] `forms` folder --> <br>
+  `forms` folder --> <br>
 - [x] Add styles to **:root {}**, **.wrapper**, **.form-container** <br>
 - [x] Add styles to  **.col-left**, **.col-right {}**, **.col-left, .col-right**
-- [x] Add styles to **.login-form input**, **.login-form input[type="submit"]**, .**login-form input[type="submit"]:hover**, **@media (max-width: 35rem) {}**
+- [x] + styles to **.login-form input**, **.login-form input[type="submit"]**, .**login-form input[type="submit"]:hover**, **@media (max-width: 35rem) {}**
 <br><br>
 
 **P.S.** 😸.
