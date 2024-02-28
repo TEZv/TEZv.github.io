@@ -51,17 +51,23 @@ body {
 /* +TASK 2.4 SECTION */
 .col-left,
 .col-right {
-  
+  display: flex;
+  padding: var(--padding-form);
 }
-
 /* +TASK 2.4 SECTION */
 
 .col-left {
   background: var(--form-color);
+  /* +TASK 2.5 SECTION */
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  /* +TASK 2.5 SECTION */
+
 }
 
 .col-right {
-  padding: 60px 30px;
+  /* +TASK 2.6 SECTION */
+  padding: 3.75rem 1.875rem;
+  /* +TASK 2.6 SECTION */
   margin-left: -10%;
 }
 
@@ -154,6 +160,11 @@ body {
   border: 1px solid gray;
   border-radius: 30px;
 }
+/* +TASK 2.7 SECTION */
+.login-form input:focus {
+  border-color: var(--active-color);
+}
+/* +TASK 2.7 SECTION */
 
 @media (max-width: 35rem) {
 }
