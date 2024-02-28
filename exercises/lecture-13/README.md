@@ -11,15 +11,22 @@
 │   │   ├── forms<br>
 │   │   │     ├── app.css<br>
 │   │   │     ├── index.html<br>
+│   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
 │   └── README.md<br>
 ├── index.html<br>
 ├── LICENSE<br>
 └── README.md<br>
-- [x] Practice with the clamp() and calc() functions - 5 tasks <br>
-- [x] Practice with the mobile-first @media in the `grid-areas` folder -> .css <br>
-- [x] Practice with the mobile-first @media in the `navbar` folder -> .css
+- [x] `tables` folder --> <br>
+- [x]  Add styles to **td, th {}**, **th {}**<br>
+- [x] Add styles to **table tr:nth-child(odd)**, **@media (max-width: 50rem) {}**
+<br><br>
+
+- [x] `forms` folder --> <br>
+- [x] Add styles to **:root {}**, **.wrapper**, **.form-container** <br>
+- [x] Add styles to  **.col-left**, **.col-right {}**, **.col-left, .col-right**
+- [x] Add styles to **.login-form input**, **.login-form input[type="submit"]**, .**login-form input[type="submit"]:hover**, **@media (max-width: 35rem) {}**
 <br><br>
 
 **P.S.** 😸.
