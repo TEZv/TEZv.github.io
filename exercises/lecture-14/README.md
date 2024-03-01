@@ -23,21 +23,32 @@
 └── README.md<br>
 
   `scale` folder --> <br>
-- [x]  Add styles to **td, th {}**, **th {}**<br>
-- [x] Add styles to **table tr:nth-child(odd)**, **@media (max-width: 50rem) {}**
+- [x] Add **transform: scale(10);** rule to .element {}
 <br><br>
 
   `skew` folder --> <br>
-- [x] Add styles to **:root {}**, **.wrapper**, **.form-container** <br>
-- [x] Add styles to  **.col-left**, **.col-right {}**, **.col-left, .col-right**
-- [x] + styles to **.login-form input**, **.login-form input[type="submit"]**, .**login-form input[type="submit"]:hover**, **@media (max-width: 35rem) {}**
+- [x] <br>
+- [x] <br>
+- [x] 
+<br><br>
+
+  `rotate` folder --> <br>
+- [x] <br>
+- [x] <br>
+- [x] 
+<br><br>
+
+  `translate` folder --> <br>
+- [x] Add **transform: skew(20deg);** to .element {}<br>
+- [x] Add **@keyframes skew { 0%{} 100%{} }** rule under .element {}<br>
+- [x] Add **animation** rule to .element {}
 <br><br>
 
 **P.S.** 😸.
 
 ## The Website
 Of the current task: <br>
-The lecture-13 website: https://qalight-tezv-lecture-14.netlify.app/<br>
+The lecture-14 website: https://qalight-tezv-lecture-14.netlify.app/<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-14
 <br />
 --> Netlify
