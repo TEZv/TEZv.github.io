@@ -1,46 +1,62 @@
-<!--------            THE TASK 2 SECTION        ---------------->
+<!--------            THE TASK 4 SECTION        ---------------->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="app.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="form-container">
-        <div class="col-left">
-          <div class="login-text">
-            <h2>Welcome Back</h2>
-            <p>Create your account.<br />It's totally free.</p>
-            <a class="btn" href="">Sign Up</a>
-          </div>
-        </div>
 
-        <div class="col-right">
-          <div class="login-form">
-            <h2>Login</h2>
-            <form>
-              <p>
-                <label>Username or email address<span>*</span></label>
-                <input type="text" placeholder="Username or Email" required />
-              </p>
-              <p>
-                <label>Password<span>*</span></label>
-                <input type="password" placeholder="Password" required />
-              </p>
-              <p>
-                <input type="submit" value="Sing In" />
-              </p>
-              <p>
-                <a href="">Forget Password?</a>
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <title>Transform explanation</title>
+
+    <style>
+      .square {
+        height: 100px;
+        width: 100px;
+        background-color: #3d9970;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        padding: 5px;
+        /* +THE TASK 4.2 SECTION*/
+        animation: shimmy 3s linear infinite;
+        /* +THE TASK 4.2 SECTION*/
+        animation-direction: alternate;
+      }
+
+      @keyframes shimmy {
+        0% {
+          /* +THE TASK 4.1 SECTION*/
+          transform: translate(0, 0);
+          /* +THE TASK 4.1 SECTION*/
+        }
+        100% {
+          /* +THE TASK 4.1 SECTION*/
+          transform: translate(20px, 50px);
+          /* +THE TASK 4.1 SECTION*/
+        }
+      }
+    </style>
+  </head>
+
+  <body translate="no">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus porro
+      officia, quae, explicabo deleniti quasi molestias dolorum non ad pariatur.
+      Illo, inventore at. Odio iure adipisci quisquam, molestias impedit quo.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus unde,
+      quis. Natus quasi, eveniet corporis facere laboriosam voluptatem ad
+      blanditiis, temporibus, laborum voluptate possimus beatae illo. Illo
+      molestiae, iure blanditiis.
+    </p>
+    <div class="square"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit
+      aperiam odit libero soluta delectus voluptatibus saepe laboriosam maiores,
+      quas, fuga vitae. Suscipit eum assumenda hic sunt, debitis voluptatum
+      odit.
+    </p>
   </body>
 </html>
-<!--------            THE TASK 2 SECTION        ---------------->
+<!--------            THE TASK 4 SECTION        ---------------->
