@@ -6,7 +6,6 @@
 │   ├── lecture-NN<br>
 │   ├── lecture-14<br>
 │   │   ├── rotate<br>
-
 │   │   │     ├── index.html<br>
 │   │   ├── scale<br>
 │   │   │     ├── index.html<br>
@@ -27,9 +26,9 @@
 <br><br>
 
   `skew` folder --> <br>
-- [x] <br>
-- [x] <br>
-- [x] 
+- [x] Add **transform: skew(20deg);** to .element {}<br>
+- [x] Add **@keyframes skew { 0%{} 100%{} }** rule under .element {}<br>
+- [x] Add **animation** rule to .element {}
 <br><br>
 
   `rotate` folder --> <br>
@@ -39,9 +38,9 @@
 <br><br>
 
   `translate` folder --> <br>
-- [x] Add **transform: skew(20deg);** to .element {}<br>
-- [x] Add **@keyframes skew { 0%{} 100%{} }** rule under .element {}<br>
-- [x] Add **animation** rule to .element {}
+- [x] <br>
+- [x] <br>
+- [x] 
 <br><br>
 
 **P.S.** 😸.
