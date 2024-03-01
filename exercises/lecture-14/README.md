@@ -32,15 +32,14 @@
 <br><br>
 
   `rotate` folder --> <br>
-- [x] <br>
-- [x] <br>
-- [x] 
+- [x] Add **transform: rotate(30deg);** to .element {}<br>
+- [x] Add **@keyframes roll { 0%{} 100%{} }** rule under .element {}<br>
+- [x] Add **animation** rule to .element {}
 <br><br>
 
   `translate` folder --> <br>
-- [x] <br>
-- [x] <br>
-- [x] 
+- [x] Add **animation** rule to .element {} <br>
+- [x] Add **@keyframes shimmy { 0%{} 100%{} }** rule under .element {}
 <br><br>
 
 **P.S.** 😸.
