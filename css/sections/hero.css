@@ -1,0 +1,8 @@
+/* hero */
+
+.hero {
+    background-image: url("../../assets/background/bg-banner.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 20rem;
+}

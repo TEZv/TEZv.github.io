@@ -1,0 +1,73 @@
+/* footer */
+.page-footer {
+  --footer-background-color: #555;
+  --footer-social-background-color: #333;
+  --footer-ligal-background-color: #000;
+  --footer-a-color: #eee;
+  --footer-light-color: #fff;
+  --footer-a-font-size: .85rem;
+}
+.page-footer .footer-main {
+  background-color: rgb(37, 24, 7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1.25rem 1.875rem;
+}
+.page-footer .footer-main .footer-main-item > ul > li > a {
+  color: var(--footer-a-color);
+  font-size: var(--footer-a-font-size);
+}
+.page-footer .footer-main .footer-main-item > ul > li > a:hover {
+  color: var(--footer-light-color);
+}
+.page-footer .footer-main .footer-main-item > ul > li > a:hover::before {
+  color: var(--footer-light-color);
+  font-weight: 900;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 3px;
+}
+.page-footer .footer-main .footer-main-item > .footer-title {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--footer-light-color);
+}
+.page-footer .footer-social {
+  background-color: var(--footer-social-background-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.page-footer .footer-social > .footer-social-list > li {
+  display: inline-block;
+}
+.page-footer .footer-social > .footer-social-list > li > a > i {
+  font-size: 1.25rem;
+  color: var(--footer-a-color);
+  margin-right: 0.5rem;
+}
+.page-footer .footer-social > .footer-social-list > li > a:hover > i {
+  color: var(--anchor-active-color);
+}
+.page-footer .footer-ligal {
+  background-color: var(--footer-ligal-background-color);
+}
+.page-footer .footer-ligal > ul.footer-ligal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-footer .footer-ligal > ul.footer-ligal-list > li {
+  white-space: nowrap;
+}
+.page-footer .footer-ligal > ul.footer-ligal-list > li > a {
+  color: var(--footer-light-color);
+}
+.page-footer .footer-ligal > ul.footer-ligal-list > li > a:hover {
+  color: var(--footer-a-color);
+}
+.page-footer .footer-ligal > ul.footer-ligal-list > li:nth-last-child(2) {
+  flex: 1;
+  margin-left: 10px
+}

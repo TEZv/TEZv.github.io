@@ -3,156 +3,491 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oksana.Kolisnyk && PERSONAL SITE</title>
-    <!--------            THE l5 TASK 6 SECTION        ---------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!--------            THE l5 TASK 6 SECTION        ---------------->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Oksana.Kolisnyk Shop</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <body>
-      <h1>Shop with <u>Oksana.Kolisnyk</u></h1>
-      <br />
-      <br />
+    <svg width="0" height="0" hidden>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        id="delivery-time"
+        fill="none"
+        stroke-miterlimit="10"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      >
+        <path d="M62 46v-5l-8-7h-8" />
+        <circle cx="24" cy="54" r="4" />
+        <circle cx="54" cy="54" r="4" />
+        <path
+          d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2"
+        />
+        <circle cx="14" cy="18" r="12" />
+        <path d="M14 12v8h6" />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        id="helpline-24h"
+        fill="none"
+        stroke-miterlimit="10"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      >
+        <path
+          d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z"
+        />
+        <path d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6" />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        id="label-tag"
+        fill="none"
+        stroke-miterlimit="10"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      >
+        <path d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z" />
+        <circle cx="48" cy="15" r="4" />
+        <path d="M31.3 21.4l11.3 11.3m-22.6 0l8.5 8.5M25.6 27l5.7 5.7" />
+      </symbol>
+    </svg>
+    <!-- page header -->
+    <header class="page-header mb-3">
+      <!-- brand -->
+      <a href="./index.html" class="brand">Oksana.Kolisnyk Shop</a>
+      <label for="toggler">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
+      <input type="checkbox" id="toggler" />
+      <!-- navigation -->
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./pages/catalog.html">Catalog</a>
+        <a href="./pages//blog.html">Blog</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages//contact.html">Contact</a>
+      </nav>
 
-      <header>
-        <h2><strong>@TEZv Shop</strong></h2>
-        <div>
-          <div class="nav_inner_container">
-            <nav>
-              <ul>
-                <li><a href="./index.html">Main</a></li>
-                <li><a href="./pages/about.html">About us</a></li>
-                <li><a href="./pages/catalog.html">Catalog</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-              </ul>
-            </nav>
+      <nav class="toolbar">
+        <a href="#" class="far fa-heart"></a>
+        <a href="./pages/cart.html" class="fas fa-dolly-flatbed"></a>
+        <a href="#" class="far fa-user"></a>
+      </nav>
+    </header>
 
-            <!--------            THE l5 TASK 11 SECTION        ---------------->
-            <nav class="second_nav">
-              <a class="fa-solid fa-heart" href="#"></a>
-              <a class="fa-solid fa-basket-shopping" href="#"></a>
-              <a class="fa-solid fa-user" href="#"></a>
-            </nav>
-            <!--------            THE l5 TASK 11 SECTION        ---------------->
-          
+    <!-- hero -->
+    <section id="hero" class="hero mt-5 mb-3">
+      <div class="container py-5 px-4">
+        <p>New Inspiration 2024</p>
+        <h1>15% offon new season!</h1>
+        <a href="#!" class="btn">Browse Collection</a>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <header class="text-center">
+          <p class="text-uppercase mb-1">Carefully created collections</p>
+          <h2>Browse our categories</h2>
+        </header>
+      </div>
+    </section>
+
+    <!-- main content -->
+    <main class="mb-3">
+      <div class="container px-4 bm-3">
+        <header>
+          <h2>Our <span>products</span></h2>
+        </header>
+        <div class="product-container">
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge bg-sale">Sale</div>
+              <img
+                src="./assets/products/product-6.jpg"
+                alt="Picture for product 6"
+                height="200"
+              />
+            </div>
+            <div class="content">
+              <h3>Product name</h3>
+              <span class="price">111.99</span> <span class="price">99.99</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- divider -->
+    <section id="divider" class="divider py-5 mb-3">
+      <div class="container text-right px-4">
+        <p>New Inspiration 2024</p>
+        <h1 class="mb-3">15% offon new season!</h1>
+        <a href="#!" class="btn-red-gradient">Browse Collection</a>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="services mb-3">
+      <div class="flex-container py-3 text-center">
+        <div class="svg-icon d-inline-block">
+          <svg class="svg-icon-item">
+            <use xlink:href="#delivery-time"></use>
+          </svg>
+          <div class="text-start">
+            <h3>Free shipping</h3>
+            <p>Free shipping worldwide.</p>
           </div>
         </div>
-      </header>
+        <div class="svg-icon d-inline-block">
+          <svg class="svg-icon-item">
+            <use xlink:href="#helpline-24h"></use>
+          </svg>
+          <div class="text-start">
+            <h3>Free shipping</h3>
+            <p>Free shipping worldwide.</p>
+          </div>
+        </div>
+        <div class="svg-icon d-inline-block">
+          <svg class="svg-icon-item">
+            <use xlink:href="#label-tag"></use>
+          </svg>
+          <div class="text-start">
+            <h3>Free shipping</h3>
+            <p>Free shipping worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <main>
-        <section>
-          <div>
-            <p>Shopping comfortably!</p>
-            <a href="/">See @TEZv Catalog</a>
+    <section>
+      <div class="carousel">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-1.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-2.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-3.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-4.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-5.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-6.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-7.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-1.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-2.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-3.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-4.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-5.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-6.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+            <div class="slide carousel-item">
+              <a class="category-item" href="#!">
+                <img
+                  src="./assets/products/product-7.jpg"
+                  alt="text"
+                  width="250"
+                  height="100"
+                />
+                <strong class="category-item-title">Category 1</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- page footer -->
+    <footer class="mb-3">
+      <div class="container page-footer">
+        <section class="footer-main">
+          <div class="footer-main-item">
+            <h3 class="footer-title">About</h3>
+            <ul>
+              <li><a href="">Services</a></li>
+              <li><a href="">Profiles</a></li>
+              <li><a href="">Prices</a></li>
+              <li><a href="">Customers</a></li>
+              <li><a href="./exercises/index.html">Exercises</a></li>
+            </ul>
+          </div>
+          <div class="footer-main-item">
+            <h3 class="footer-title">Resources</h3>
+            <ul>
+              <li><a href="">Docs</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">eBooks</a></li>
+              <li><a href="">Webinars</a></li>
+            </ul>
+          </div>
+          <div class="footer-main-item">
+            <h3 class="footer-title">Contact</h3>
+            <ul>
+              <li><a href="">Help</a></li>
+              <li><a href="">Sales</a></li>
+              <li><a href="">Advertise</a></li>
+            </ul>
           </div>
         </section>
 
-        <section>
-          <h2>Some Item</h2>
-          <h3>Another Item</h3>
-          <h6>And even other item</h6>
+        <section class="footer-social py-3">
+          <ul class="footer-social-list">
+            <li>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
         </section>
 
-        <iframe
-          src="https://en.wikipedia.org/wiki/Online_marketplace"
-          title="Online marketplace Wikipedia page"
-        ></iframe>
-      </main>
-
-      <footer>
-        <!-- "About" -->
-        <!-- створити тут секцію -->
-        <!-- створити тут div -->
-        <section>
-          <div>
-            <h2>About</h2>
-            <!-- створити тут невпорядкований список -->
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </div>
-
-          <!-- "Resources" -->
-          <!-- створити тут div -->
-          <div>
-            <h2>Resources</h2>
-            <!-- створити тут невпорядкований список -->
-            <ul>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">eBooks</a></li>
-              <li><a href="#">Webinars</a></li>
-            </ul>
-          </div>
-
-          <!-- "Contact" -->
-          <!-- створити тут div -->
-          <div>
-            <h2>Contact</h2>
-            <!-- створити тут невпорядкований список -->
-            <ul>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Sales</a></li>
-              <li><a href="#">Advertise</a></li>
-            </ul>
-          </div>
-
-          <!--------            THE l5 TASK 10 SECTION        ---------------->
-          <section class="footer-social">
-            <ul class="list-unstyled">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/kolisnyk_oksana"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/TEZv"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/oksana-kolisnyk-0b9632247/"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/is_zazera/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </section>
-          <!--------            THE l5 TASK 10 SECTION        ---------------->
-
-          <!-- Footer legal -->
-          <!-- створити тут секцію -->
-          <section>
-            <!-- створити тут невпорядкований список -->
-            <ul>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li>&copy; 2024 Copyright @TEZv Inc.</li>
-            </ul>
-          </section>
+        <section class="footer-ligal">
+          <ul class="footer-ligal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">&copy; 2024 Copyright&nbsp;&nbsp; Oksana.Kolisnyk Shop Inc.</a></li>
+          </ul>
         </section>
-      </footer>
-    </body>
+      </div>
+    </footer>
   </body>
 </html>

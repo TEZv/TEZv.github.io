@@ -1,39 +1,63 @@
-/*    THE l3 TASK 6 SECTION   */
-@import url("my-imported-styles.css");
-/* @import MUST be before the styles, i.e. --> "my-imported-styles.css" doesn't exist here */
+/* common.css */
 
-/*    THE l6 TASK 12 SECTION   */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,400;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
-  /*    html {} --> :root {}   */
-  /*    THE l6 TASK 12 SECTION   */
-
-  /*    THE l3 TASK 7 SECTION   */
-  --primary-text-color: #000;
-  --primary-bg-color: #fff;
-  /*    THE l3 TASK 7 SECTION   */
-
-  /*    THE l5 TASK 8 SECTION   */
-  --primary-font-family: "Roboto", sans-serif;
-  --primary-font-size: 0.875rem;
-  /*    THE l5 TASK 8 SECTION   */
+    --main-color: rgb(26, 26, 71);
+    --anchor-color: #e21161;
+    --anchor-active-color: rgb(252, 76, 57);
+    --currency-symbol: "\20B4";
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/*    THE l3 TASK 6 SECTION   */
 
-/*    THE l3 TASK 7 SECTION   */
-footer {
-  --footer-text-color: #fff;
-  --fuuter-bg-color: #000;
-}
-/*    THE l3 TASK 7 SECTION   */
 
-/*    THE l5 TASK 11 SECTION   */
+body {
+    color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    /* 1rem = 16px */
+    /* font-size: .875rem / 1.3;  */
+    font-size: clamp(.85rem, 1.2rem, 1rem); 
+    background-color: rgba(95, 16, 38, 0.356);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    /* font-size: calc(1.3rem + 1.1vw); */
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h2 {
+    /* font-size: calc(1.2rem + .8vw); */
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
+h3 { 
+    font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+}
+
+/* p {
+    /* common property for p
+} */
+
 a {
-  text-decoration: none;
+    color: var(--anchor-color);
+    text-decoration: none;
 }
-/*    THE l5 TASK 11 SECTION   */
+
+ul {
+    list-style: none;
+}
