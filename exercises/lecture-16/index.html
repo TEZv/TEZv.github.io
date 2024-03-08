@@ -43,27 +43,60 @@
       let apples = "2";
       let oranges = "3";
 
-      alert(parseInt(apples) + parseInt(oranges));
+      alert(parseInt(apples) + parseInt(oranges)); //5
       // THE TASK 5 SECTION
 
       // THE TASK 6 SECTION
-      
+      {
+        let a = 1,
+          b = 1;
+        let c = ++a; //2
+        let d = b++; //1
+      }
       // THE TASK 6 SECTION
 
       // THE TASK 7 SECTION
-
+      {
+        let a = 2;
+        let x = 1 + (a *= 2); //(a*=2) = 4 , x = 5
+      }
       // THE TASK 7 SECTION
 
       // THE TASK 8 SECTION
-
+      "" + 1 + 0; // 10 -> String concatenation
+      "" - 1 + 0; // -1 -> String concatenation
+      true + false; // 1 -> true = 1 , false  = 0
+      6 / "3"; // 2 -> Convert to number
+      "2" * "3"; // 6 -> Convert to number
+      4 + 5 + "px"; // "9px" -> Adds numbers and converts to string
+      "$" + 4 + 5; // "$45" -> Converts to string and adds numbers to str
+      "4" - 2; // 2 -> Convert to number
+      "4px" - 2; // NaN
+      "  -9  " + 5; // "  -9  5" -> Converts to string and adds the num to str + spaces
+      "  -9  " - 5; // -14 -> Convert to number
+      null + 1; // 1 -> Convert to number
+      undefined + 1; // NaN
+      NaN + 1; // NaN
       // THE TASK 8 SECTION
 
       // THE TASK 9 SECTION
-
+      let n = 2;
+      n += 5; //
+      n *= 2; //
       // THE TASK 9 SECTION
-      
-      // THE TASK 10 SECTION
 
+      // THE TASK 10 SECTION
+      let n1 = "   123   ";
+      let n2 = "123z";
+      let n3 = true;
+      let n4 = false;
+
+      n1 = parseInt(n1); //can be used .trim() --> trim deletes the spaces
+      n2 = parseInt(n2);
+      n3 = Number(n3);
+      n4 = +n4;
+
+      console.log(n1, n2, n3, n4);
       // THE TASK 10 SECTION
     </script>
   </body>
