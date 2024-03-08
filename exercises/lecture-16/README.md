@@ -14,13 +14,8 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Set up Bootstrap-component navbar<br>
-- [x] Set up .bg-primary to `navbar` class<br>
-- [x] Set up .bg-dark to `navbar` class<br>
-- [x] Set up style="background-color: #e3f2fd;" to `navbar` class<br>
-- [x] Set up the component accordion<br>
-- [x] Set up the component breadcrumb<br>
-- [x] Create and set up the component Sticky footer
+- [x] Practice with JavaScript Basics that includes types and declarations<br>
+- [x] Practice with alert(), parseInt(), ..12345n, prompt(), parseFloat(), parseInt(), ++a, b++, += *=, Number() usage
 <br><br>
 
 **P.S.** 😸.
