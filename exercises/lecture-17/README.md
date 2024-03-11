@@ -14,8 +14,8 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes types and declarations<br>
-- [x] Practice with alert(), parseInt(), ..12345n, prompt(), parseFloat(), parseInt(), ++a, b++, += *=, Number() usage
+- [x] Practice with JavaScript Basics that includes comparisons, prompt()<br>
+- [x] Practice with else if, switch, ternary, nullish coalescing (??) operators usage
 <br><br>
 
 **P.S.** 😸.
@@ -28,6 +28,6 @@ The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/
 --> Netlify
 
 ## Deadline
-08.03.24 <br />
+11.03.24 <br />
 
-- [x] Done 95% of all requirements by 08.03.24
+- [x] Done 95% of all requirements by 11.03.24
