@@ -110,20 +110,32 @@
       // Display the assigned grade
       console.log("Student's grade:", grade);
 
-
       // Prompt the user to enter the student's score
-let scoreTernal = parseInt(prompt("Enter the student's score: "));
+      let scoreTernary = parseInt(prompt("Enter the student's score: "));
 
-// Assign a grade to the student based on the score using the ternary operator
-let gradeTernal = score < 50 ? 'F' : scoreTernal < 70 ? 'D' : scoreTernal < 80 ? 'C' : scoreTernal < 90 ? 'B' : 'A';
+      // Assign a grade to the student based on the score using the ternary operator
+      let gradeTernary =
+        score < 50
+          ? "F"
+          : scoreTernary < 70
+          ? "D"
+          : scoreTernary < 80
+          ? "C"
+          : scoreTernary < 90
+          ? "B"
+          : "A";
 
-// Display the assigned grade
-console.log("Student's grade:", gradeTernal);
+      // Display the assigned grade
+      console.log("Student's grade:", gradeTernary);
 
       // THE TASK 5 SECTION
 
       // THE TASK 6 SECTION
-
+      let firstName = null;
+      let lastName = undefined;
+      let username = (firstName || lastName) ?? "Guest"; // +()
+      
+      console.log(username); // "Guest"
       // THE TASK 6 SECTION
     </script>
   </body>
