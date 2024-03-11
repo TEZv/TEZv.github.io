@@ -1,0 +1,132 @@
+<!------------------------------- THE TASK 1 SECTION --------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // THE TASK 1 SECTION
+      let x = 3;
+      let y = 4;
+
+      x == 3; // true
+      x === "3"; // false
+      x != 5; // true
+      x !== "5"; // true
+      X !== 3; // true (X is not defined) -> if "x !== 3;" -> false
+      y > 5; // false
+      y >= 3; // true
+      y < 5; // true
+      y <= 2; // false
+      1 == true; // true
+      null == undefined; // true
+      NaN == NaN; // false
+      // THE TASK 1 SECTION
+
+      // THE TASK 2 SECTION
+      {
+        let x = 3;
+        let y = 4;
+        let z = 5;
+
+        x ||= y; // x=> 3 (OR -> FIRSTLY true)
+        x || (y = z); //x=> 3 (OR -> FIRSTLY true)
+        x &&= y; // x=> 4 (AND -> LASTLY true)
+        x && (y = z); // y=> 5 (AND -> LASTLY true)
+        x ??= y; // y=> 4 (Nullish coalescing -> LASTLY true)
+        x ?? (y = z); // y=> 5 (Nullish coalescing -> LASTLY true)
+      }
+      // THE TASK 2 SECTION
+
+      // THE TASK 3 SECTION
+      const numberToGuess = 3; //Pre-Defined number
+
+      const guess = parseInt(prompt("Guess the number:"));
+
+      //Check the entered number
+      if (guess === numberToGuess) {
+        alert("Congratulations, You did it!");
+      } else if (guess > numberToGuess) {
+        alert("The number is too long");
+      } else {
+        alert("The number is short");
+      }
+
+      // THE TASK 3 SECTION
+
+      // THE TASK 4 SECTION
+      // prompt to the week day from the User IF ELSE
+      const day = prompt("Enter the name of the day of the week:");
+
+      // Check the User input
+      if (day === "Понеділок" || day === "Monday") {
+        alert("Start of the work week!");
+      } else if (day === "П'ятниця" || day === "Friday") {
+        alert("End of the work week!");
+      } else {
+        alert("A regular day");
+      }
+
+      // prompt to the week day from the User SWITCH
+      const switchDay = prompt("Enter the name of the day of the week:");
+
+      // Check the User input
+      switch (switchDay.toLowerCase()) {
+        case "понеділок":
+        case "monday":
+          alert("Start of the work week!");
+          break;
+        case "п'ятниця":
+        case "friday":
+          alert("End of the work week!");
+          break;
+        default:
+          alert("A regular day");
+          break;
+      }
+      // THE TASK 4 SECTION
+
+      // THE TASK 5 SECTION
+      // Prompt the user to enter the student's score
+      let score = parseInt(prompt("Enter the student's score: "));
+
+      // Assign a grade to the student based on the score
+      let grade;
+      if (score < 50) {
+        grade = "F";
+      } else if (score < 70) {
+        grade = "D";
+      } else if (score < 80) {
+        grade = "C";
+      } else if (score < 90) {
+        grade = "B";
+      } else {
+        grade = "A";
+      }
+
+      // Display the assigned grade
+      console.log("Student's grade:", grade);
+
+
+      // Prompt the user to enter the student's score
+let scoreTernal = parseInt(prompt("Enter the student's score: "));
+
+// Assign a grade to the student based on the score using the ternary operator
+let gradeTernal = score < 50 ? 'F' : scoreTernal < 70 ? 'D' : scoreTernal < 80 ? 'C' : scoreTernal < 90 ? 'B' : 'A';
+
+// Display the assigned grade
+console.log("Student's grade:", gradeTernal);
+
+      // THE TASK 5 SECTION
+
+      // THE TASK 6 SECTION
+
+      // THE TASK 6 SECTION
+    </script>
+  </body>
+</html>
+
+<!------------------------------- THE TASK 1 SECTION --------------------->
