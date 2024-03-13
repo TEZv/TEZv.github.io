@@ -25,14 +25,14 @@
 
       // THE TASK 1.1 SECTION
       let ageOther = prompt("Hi! I need your age! Please, enter it below:");
-      function checkAge(ageOther) {
+      function checkAgeOther(ageOther) {
         if (ageOther > 18) {
           return true;
         }
 
         return confirm("Did parents allow you?");
       }
-      checkAge(ageOther);
+      checkAgeOther(ageOther);
       // THE TASK 1.1 SECTION
 
       // THE TASK 1.2-1.3 SECTION --> The function will work in the same way, 
@@ -45,8 +45,76 @@
       // THE TASK 2.1 SECTION
 
       // THE TASK 2.2 SECTION
-
+      function checkAgeFourOther(ageOther) {
+        return ageOther > 18 || confirm("Did parents allow you?");
+      }
       // THE TASK 2.2 SECTION
+
+      /* THE TASK 3 SECTION
+      return (age > 18) || confirm('Did parents allow you?');
+
+      Parentheses are not needed, 
+      they simply make the code more readable
+        THE TASK 3 SECTION */
+
+      // THE TASK 4.1 SECTION
+      function minIf(a, b) {
+        if (a < b) {
+          return a;
+        } else {
+          return b;
+        }
+      }
+      console.log(minIf(2, 5));
+      console.log(minIf(3, -1));
+      console.log(minIf(1, 1));
+      // THE TASK 4.1 SECTION
+
+      // THE TASK 4.2 SECTION
+      function minTernary(a, b) {
+        return a < b ? a : b;
+      }
+      console.log(minTernary(2, 5));
+      console.log(minTernary(3, -1));
+      console.log(minTernary(1, 1));
+      // THE TASK 4.2 SECTION
+
+      // THE TASK 5 SECTION
+      
+      // THE TASK 5 SECTION
+
+      // THE TASK 6 SECTION
+      let ask = (question, yes, no) => {
+        if (confirm(question)) yes();
+        else no();
+      };
+      ask(
+        "Asked some question:",
+        function () {
+          alert("You answered YES");
+        },
+        function () {
+          alert("You answered NO");
+        }
+      );
+      // THE TASK 6 SECTION
+
+      // THE TASK 7 SECTION
+      let askNew = function (question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      };
+      
+      askNew(
+        "Asked some question:",
+        () => console.log("You answered YES"),
+        () => console.log("You answered NO")
+      );
+      // THE TASK 7 SECTION
+
+      // THE TASK 8 SECTION
+
+      // THE TASK 8 SECTION
     </script>
   </body>
 </html>
