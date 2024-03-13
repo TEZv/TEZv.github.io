@@ -1,0 +1,54 @@
+<!------------------------------- THE TASK 1 SECTION --------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    - checkAge returns true, if age > 18. - else: ask the confirmation and
+    returns the result:
+
+    <script>
+      // THE TASK 1 SECTION
+      let age = prompt("Hi! I need your age! Please, enter it below:");
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        } else {
+          return confirm("Did parents allow you?");
+        }
+      }
+      checkAge(age);
+      // THE TASK 1 SECTION
+
+      // THE TASK 1.1 SECTION
+      let ageOther = prompt("Hi! I need your age! Please, enter it below:");
+      function checkAge(ageOther) {
+        if (ageOther > 18) {
+          return true;
+        }
+
+        return confirm("Did parents allow you?");
+      }
+      checkAge(ageOther);
+      // THE TASK 1.1 SECTION
+
+      // THE TASK 1.2-1.3 SECTION --> The function will work in the same way, 
+      // --> there is no difference, the function simply ends after return
+
+      // THE TASK 2.1 SECTION
+      function checkAgeFour(age) {
+        return age > 18 ? true : confirm("Did parents allow you?");
+      }
+      // THE TASK 2.1 SECTION
+
+      // THE TASK 2.2 SECTION
+
+      // THE TASK 2.2 SECTION
+    </script>
+  </body>
+</html>
+
+<!------------------------------- THE TASK 1 SECTION --------------------->
