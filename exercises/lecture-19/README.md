@@ -15,8 +15,8 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes if/else, =>, ||, ?, min(a,b), ask(), confirm(), pow(x,n)
-- [x] Practice with JavaScript Basics that includes if/else, =>, ||, ?, min(a,b), ask(), confirm(), pow(x,n)
+- [x] Practice with JavaScript Basics that includes string and its methods: [index], charAt(), slice(), concat(), trim(), trimStart(), trimEnd(), includes(), indexOf(), 
+- [x] Practice with JavaScript Basics that includes match(), test(), Regex, substring(), substr()
 <br><br>
 
 **P.S.** 😸.
