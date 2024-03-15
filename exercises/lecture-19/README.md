@@ -5,6 +5,7 @@
 ├── exercises<br>
 │   ├── lecture-NN<br>
 │   ├── lecture-19<br>
+│   │   ├── app.js<br>
 │   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
