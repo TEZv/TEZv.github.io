@@ -109,13 +109,13 @@ console.log(template);
 
 // THE TASK 11 SECTION
 let string1 = "  The name of our game  ";
-console.log(string1.trim());         // Output: "The name of our game"
-console.log(string1.trimEnd());      // Output: "  The name of our game"
-console.log(string1.trimStart());    // Output: "The name of our game  "
+console.log(string1.trim()); // Output: "The name of our game"
+console.log(string1.trimEnd()); // Output: "  The name of our game"
+console.log(string1.trimStart()); // Output: "The name of our game  "
 
-const phoneNumber = '\t  555-123\n ';
-console.log(phoneNumber.trim());     // Output: '555-123'
-console.log(phoneNumber.trimStart());  // Output: '555-123 \n'
+const phoneNumber = "\t  555-123\n ";
+console.log(phoneNumber.trim()); // Output: '555-123'
+console.log(phoneNumber.trimStart()); // Output: '555-123 \n'
 // THE TASK 11 SECTION
 
 // THE TASK 12 SECTION
@@ -139,13 +139,64 @@ console.log(sentence.split(" ")[1]);
 // THE TASK 14 SECTION
 
 // THE TASK 15 SECTION
+//CHECK THE USERNAME FOR THE CORRECTNESS
+//              /^[a-z0-9_-]{8,16}$/;
+
+//test function
+function userLogin(log) {
+  let usernameRegex = /^[a-z0-9_-]{8,16}$/;
+  let matchedRegex = log.match(usernameRegex);
+  if (usernameRegex.test(log)) {
+    console.log("Login is valid, success", matchedRegex);
+    return true;
+  } else {
+    console.log("Login doesn't valid");
+    return false;
+  }
+}
+userLogin("qwerty1234");
 
 // THE TASK 15 SECTION
 
 // THE TASK 16 SECTION
+//CHECK THE EMAIL FOR THE CORRECTNESS
+//              /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+//test function
+function checkUserEmail(email) {
+  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let matchedEmailRegex = email.match(emailRegex);
+  if (emailRegex.test(email)) {
+    console.log("Email is valid, success", matchedEmailRegex);
+    return true;
+  } else {
+    console.log("Email doesn't valid");
+    return false;
+  }
+}
+checkUserEmail("test@test.com");
 
 // THE TASK 16 SECTION
 
 // THE TASK 17 SECTION
+let text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
 
+//use of substring()
+function truncateTextSubstring(text) {
+  if (text.length > 50) {
+    return text.substring(0, 50) + "...";
+  } else {
+    return text;
+  }
+}
+//use of substr()
+function truncateTextSubstr(text) {
+  if (text.length > 50) {
+    return text.substr(0, 50) + "...";
+  } else {
+    return text;
+  }
+}
+console.log(truncateTextSubstring(text));
+console.log(truncateTextSubstr(text));
 // THE TASK 17 SECTION
