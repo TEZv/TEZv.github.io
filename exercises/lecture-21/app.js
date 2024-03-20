@@ -73,16 +73,34 @@ console.log("\n`NOTE`: 'unshift()' added the 'Joker' to the start of []");
 }
 // THE TASK 8 SECTION
 
-// THE TASK 9 SECTION
+console.log("\n`NOTE`: 'unshift()' added the 'Catwoman' to the start of []");
 
 // THE TASK 9 SECTION
+{
+  const names = ["Batman", "Joker", "Bane"];
+  names.unshift("Catwoman");
+  console.log(names);
+}
+// THE TASK 9 SECTION
+
+console.log("\n`NOTE`: '...names' added the 'Catwoman' to the start of []");
 
 // THE TASK 10 SECTION
-
+{
+  let names = ["Batman", "Joker", "Bane"];
+  names = ["Catwoman", ...names];
+  console.log(names);
+}
 // THE TASK 10 SECTION
+
+console.log("\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []");
 
 // THE TASK 11 SECTION
-
+{
+  const names = ["Batman", "Joker", "Bane"];
+  names.splice(1, 0, "Catwoman");
+  console.log(names);
+}
 // THE TASK 11 SECTION
 
 // THE TASK 12 SECTION
