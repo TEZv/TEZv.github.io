@@ -1,6 +1,6 @@
 console.log("`NOTE`: String -> [], fruits ==> []");
 // THE TASK 1 SECTION
-let fruits = 'apple banana cantaloupe blueberries grapefruit';
+let fruits = "apple banana cantaloupe blueberries grapefruit";
 fruits = fruits.split(" ");
 console.log(fruits);
 // THE TASK 1 SECTION
@@ -41,22 +41,58 @@ for (const fruit of fruits) {
 }
 // THE TASK 5 SECTION
 
-console.log("\n`NOTE`: 'do{} while()' loop shows each item of []");
+console.log("\n`NOTE`: 'for(){}' loop shows even items of Numbs[]");
 
 // THE TASK 6 SECTION
+const Numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+for (let i = 0; i < Numbs.length; i++) {
+  if (Numbs[i] % 2 === 0) {
+    console.log(Numbs[i]);
+  }
+}
 // THE TASK 6 SECTION
 
-console.log("\n`NOTE`: 'do{} while()' loop shows each item of []");
+console.log("\n`NOTE`: 'push()' added the 'Joker' to the end of []");
 
 // THE TASK 7 SECTION
-
+{
+  const names = ["Batman"];
+  names.push("Joker");
+  console.log(names);
+}
 // THE TASK 7 SECTION
+
+console.log("\n`NOTE`: 'unshift()' added the 'Joker' to the start of []");
 
 // THE TASK 8 SECTION
-
+{
+  const names = ["Batman"];
+  names.unshift("Joker");
+  console.log(names);
+}
 // THE TASK 8 SECTION
 
 // THE TASK 9 SECTION
 
 // THE TASK 9 SECTION
+
+// THE TASK 10 SECTION
+
+// THE TASK 10 SECTION
+
+// THE TASK 11 SECTION
+
+// THE TASK 11 SECTION
+
+// THE TASK 12 SECTION
+
+// THE TASK 12 SECTION
+
+// THE TASK 13 SECTION
+
+// THE TASK 13 SECTION
+
+// THE TASK 14 SECTION
+
+// THE TASK 14 SECTION
