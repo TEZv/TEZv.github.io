@@ -93,7 +93,9 @@ console.log("\n`NOTE`: '...names' added the 'Catwoman' to the start of []");
 }
 // THE TASK 10 SECTION
 
-console.log("\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []");
+console.log(
+  "\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []"
+);
 
 // THE TASK 11 SECTION
 {
@@ -103,14 +105,89 @@ console.log("\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2n
 }
 // THE TASK 11 SECTION
 
-// THE TASK 12 SECTION
+console.log(
+  "\n`NOTE`: 'indexOf() and splice() ' removed the 'Catwoman' and 'Joker' from []"
+);
 
 // THE TASK 12 SECTION
+{
+  const names = ["Batman", "Catwoman", "Joker", "Bane"];
+  console.log(names);
+
+  const indexCatwoman = names.indexOf("Catwoman");
+
+  if (indexCatwoman !== -1) {
+    names.splice(indexCatwoman, 1);
+  }
+
+  console.log(names);
+
+  const indexJoker = names.indexOf("Joker");
+  if (indexJoker !== -1) {
+    names.splice(indexJoker, 1);
+  }
+
+  console.log(names);
+}
+// THE TASK 12 SECTION
+
+console.log(
+  "\n`NOTE`: 'new Set() and add()' replaced the 'Catwoman' and 'Joker' with 'Alfred' in []"
+);
 
 // THE TASK 13 SECTION
+{
+  let names = ["Batman", "Catwoman", "Joker", "Bane"];
+  console.log(names);
+  const rename = "Alfred";
 
+  const newArray = new Set();
+
+  for (let i = 0; i < names.length; i++) {
+    if (names[i] === "Catwoman" || names[i] === "Joker") {
+      newArray.add(rename);
+    } else {
+      newArray.add(names[i]);
+    }
+  }
+
+  names = Array.from(newArray);
+
+  console.log(names);
+}
 // THE TASK 13 SECTION
 
-// THE TASK 14 SECTION
+console.log(
+  "\n`NOTE`: 'includes()' checks for the 'Alfred' in [], if absent - 'push()'"
+);
 
 // THE TASK 14 SECTION
+{
+  const names = ["Batman", "Catwoman", "Joker", "Bane"];
+  console.log(names);
+
+  if (!names.includes("Alfred")) {
+    names.push("Alfred");
+  }
+  console.log(names);
+}
+// THE TASK 14 SECTION
+
+console.log(
+  "\n`NOTE`: 'indexOf()' checks for the 'Alfred' in [], if present - 'splice()'"
+);
+
+// THE TASK 15 SECTION
+{
+  const names = ["Batman", "Catwoman", "Joker", "Bane"];
+  console.log(names);
+
+  const alfred = names.indexOf("Alfred");
+
+  if (alfred !== -1) {
+    names.splice(alfred, 1);
+  } else {
+    console.log("Couldn't find 'Alfred'. The array it was looked for above⬆️");
+  }
+}
+// THE TASK 15 SECTION
