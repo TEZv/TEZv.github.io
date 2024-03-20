@@ -15,8 +15,8 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes objects, its properties and its methods: name, age bio(), introduceSelf(), english_please() and excuse_my_french()
-- [x] Practice with functions-constructors and its arguments: Person / mary and tom
+- [x] Practice with JavaScript Basics that includes arrays, its methods: push(), unshift(), splice(), indexOf(), includes(), add(), ...operator
+- [x] Practice with JavaScript Basics that includes loops: for(){}, for(of){}while(){}, do{} while()
 <br><br>
 
 **P.S.** 😸.
