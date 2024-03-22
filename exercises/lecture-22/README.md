@@ -23,12 +23,12 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-21 website: https://qalight-tezv-lecture-21.netlify.app/<br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-21
+The lecture-22 website: [a relative link](./index.html)<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-22
 <br />
 --> Netlify
 
 ## Deadline
-20.03.24 <br />
+22.03.24 <br />
 
-- [x] Done 95% of all requirements by 20.03.24
+- [x] Done 95% of all requirements by 22.03.24

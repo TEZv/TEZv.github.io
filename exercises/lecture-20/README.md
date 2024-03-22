@@ -23,10 +23,10 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-20 website: https://qalight-tezv-lecture-20.netlify.app/<br>
+The lecture-20 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-20
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 18.03.24 <br />
