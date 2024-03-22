@@ -16,8 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes arrays, its methods: push(), unshift(), splice(), indexOf(), includes(), add(), ...operator
-- [x] Practice with JavaScript Basics that includes loops: for(){}, for(of){}while(){}, do{} while()
+- [x] Practice with JavaScript Basics that includes DOM and its elements manipulation methods
 <br><br>
 
 **P.S.** 😸.
@@ -27,7 +26,7 @@ Of the current task: <br>
 The lecture-22 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-22
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 22.03.24 <br />
