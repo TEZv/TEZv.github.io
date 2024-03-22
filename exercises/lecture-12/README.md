@@ -21,10 +21,12 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-12 website: https://qalight-tezv-lecture-12.netlify.app/<br>
+The lecture-12 website: [a relative link](./index.html)<br>
+The lecture-12 website - `grid-areas` folder: [a relative link](./grid-areas/index.html)<br>
+The lecture-12 website - `navbar` folder: [a relative link](./navbar/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-12
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 26.02.24 <br />

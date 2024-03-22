@@ -24,10 +24,11 @@
 ## The Website
 Of the current task: <br>
 The lecture-10 website: [a relative link](./index.html)<br>
-The lecture-10 website: [a relative link](./index.html)<br>
+The lecture-10 website - `layout` folder: [a relative link](./layout/index.html)<br>
+The lecture-10 website - `navbar` folder: [a relative link](./navbar/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-10
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 21.02.24 <br />

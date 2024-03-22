@@ -21,10 +21,12 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-11 website: https://qalight-tezv-lecture-11.netlify.app/<br>
+The lecture-11 website: [a relative link](./index.html)<br>
+The lecture-11 website - `layout` folder: [a relative link](./layout/index.html)<br>
+The lecture-11 website - `template` folder: [a relative link](./template/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-11
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 23.02.24 <br />

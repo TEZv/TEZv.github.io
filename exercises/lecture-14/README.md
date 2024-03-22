@@ -46,10 +46,13 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-14 website: https://qalight-tezv-lecture-14.netlify.app/<br>
+The lecture-14 website - `layout` folder: [a relative link](./layout/index.html)<br>
+The lecture-14 website - `navbar` folder: [a relative link](./navbar/index.html)<br>
+The lecture-14 website - `layout` folder: [a relative link](./layout/index.html)<br>
+The lecture-14 website - `navbar` folder: [a relative link](./navbar/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-14
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 01.03.24 <br />

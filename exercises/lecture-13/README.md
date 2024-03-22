@@ -34,10 +34,11 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-13 website: https://qalight-tezv-lecture-13.netlify.app/<br>
+The lecture-13 website - `forms` folder: [a relative link](./forms/index.html)<br>
+The lecture-13 website - `tables` folder: [a relative link](./tables/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-13
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 28.02.24 <br />

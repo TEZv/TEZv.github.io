@@ -29,7 +29,7 @@ Of the current task: <br>
 The lecture-04 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-04
 <br />
---> Netlify
+--> Github
 
 ## Deadline
 07.02.24 <br />
