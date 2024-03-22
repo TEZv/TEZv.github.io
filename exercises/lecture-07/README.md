@@ -22,7 +22,7 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-07 website: https://qalight-tezv-lecture-07.netlify.app/<br>
+The lecture-07 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-07
 <br />
 --> Netlify

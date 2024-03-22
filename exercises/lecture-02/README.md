@@ -31,8 +31,8 @@ Each page needs to have:
 
 ## The Website
 Of the current task: <br>
-The lecture-02 website: https://qalight-tezv-lecture-02.netlify.app/<br>
-The lecture-02 task-6 website: https://qalight-tezv-lecture-02-task6.netlify.app/<br>
+The lecture-02 website: [a relative link](./index.html)<br>
+The lecture-02 task-6 website: [a relative link](./lecture-02_task-6/index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-02
 <br />
 --> Netlify

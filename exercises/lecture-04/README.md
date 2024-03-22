@@ -26,7 +26,7 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-04 website: https://qalight-tezv-lecture-04.netlify.app/<br>
+The lecture-04 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-04
 <br />
 --> Netlify
