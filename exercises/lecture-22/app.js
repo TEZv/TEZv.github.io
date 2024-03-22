@@ -1,4 +1,3 @@
-// THE TASK 1 SECTION
 console.log("`Four h1 elements in the console`");
 // THE TASK 1 SECTION
 const h1Elements = document.getElementsByTagName("h1");
@@ -21,7 +20,8 @@ console.log("`Make the second p element with predefined styles`");
 
 // THE TASK 3 SECTION
 const pSecondElement = document.querySelector("#p2");
-pSecondElement.style.cssText = "background-color:gold; color: blue; font-size: 2rem;";
+pSecondElement.style.cssText =
+  "background-color:gold; color: blue; font-size: 2rem;";
 // THE TASK 3 SECTION
 
 console.log("`Add .third class to the third p element`");
@@ -38,7 +38,9 @@ const pFourElement = document.querySelector("#p4");
 pFourElement.classList.add("fourth", "border");
 // THE TASK 5 SECTION
 
-console.log("`Find all elements with .container class and show the first element from each`");
+console.log(
+  "`Find all elements with .container class and show the first element from each`"
+);
 
 // THE TASK 6 SECTION
 const container = document.querySelectorAll(".container");
@@ -49,11 +51,13 @@ for (let i = 0; i < container.length; i++) {
 }
 // THE TASK 6 SECTION
 
-console.log("`Find all elements with .container class and show the content of the first element from each`");
+console.log(
+  "`Find all elements with .container class and show the content of the first element from each`"
+);
 
 // THE TASK 7 SECTION
 for (let i = 0; i < container.length; i++) {
-  const firstChildWithContent = cont[i].firstElementChild.textContent;
+  const firstChildWithContent = container[i].firstElementChild.textContent;
   console.log("Contents: ", firstChildWithContent);
 }
 // THE TASK 7 SECTION
@@ -61,5 +65,50 @@ for (let i = 0; i < container.length; i++) {
 console.log("`Find all elements with .container header and use `for` loops`");
 
 // THE TASK 8 SECTION
+const headers = document.querySelectorAll(".container header");
+console.log(headers);
+const classes = ["first", "second", "third", "fourth"];
 
+for (let i = 0; i < headers.length; i++) {
+  const h1Header = headers[i].querySelector("h1");
+  const originId = h1Header.id;
+  const originClass = h1Header.className;
+
+  if (i === 0) {
+    h1Header.classList.add(classes[i]);
+  } else if (i === 1) {
+    h1Header.outerHTML =
+      "<h2 id='" +
+      originId +
+      "' class='" +
+      originClass +
+      " " +
+      classes[i] +
+      "'>" +
+      h1Header.innerHTML +
+      "</h2>";
+  } else if (i === 2) {
+    h1Header.outerHTML =
+      "<h3 id='" +
+      originId +
+      "' class='" +
+      originClass +
+      " " +
+      classes[i] +
+      "'>" +
+      h1Header.innerHTML +
+      "</h3>";
+  } else if (i === 3) {
+    h1Header.outerHTML =
+      "<h4 id='" +
+      originId +
+      "' class='" +
+      originClass +
+      " " +
+      classes[i] +
+      "'>" +
+      h1Header.innerHTML +
+      "</h4>";
+  }
+}
 // THE TASK 8 SECTION
