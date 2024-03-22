@@ -1,193 +1,65 @@
-console.log("`NOTE`: String -> [], fruits ==> []");
 // THE TASK 1 SECTION
-let fruits = "apple banana cantaloupe blueberries grapefruit";
-fruits = fruits.split(" ");
-console.log(fruits);
+console.log("`Four h1 elements in the console`");
+// THE TASK 1 SECTION
+const h1Elements = document.getElementsByTagName("h1");
+console.log("Type - ", typeof h1Elements); //object
+console.log("Length - ", h1Elements.length); //4
+
+for (let i = 0; i < h1Elements.length; i++) {
+  console.log("Elements - ", h1Elements[i]); // First Title, Second Title, Third Title, Fourth Title
+}
 // THE TASK 1 SECTION
 
-console.log("\n`NOTE`: 'for(){}' loop shows each item of []");
+console.log("`Make the first p element with backgroundColor = 'gold'`");
 
 // THE TASK 2 SECTION
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}
+const pFirstElement = document.querySelector("#p1");
+pFirstElement.style.backgroundColor = "gold";
 // THE TASK 2 SECTION
 
-console.log("\n`NOTE`: 'while(){}' loop shows each item of []");
+console.log("`Make the second p element with predefined styles`");
 
 // THE TASK 3 SECTION
-let fruitElement = 0;
-while (fruitElement < fruits.length) {
-  console.log(fruits[fruitElement]);
-  fruitElement++;
-}
+const pSecondElement = document.querySelector("#p2");
+pSecondElement.style.cssText = "background-color:gold; color: blue; font-size: 2rem;";
 // THE TASK 3 SECTION
 
-console.log("\n`NOTE`: 'do{} while()' loop shows each item of []");
+console.log("`Add .third class to the third p element`");
 
 // THE TASK 4 SECTION
-let index = 0;
-do {
-  console.log(fruits[index]);
-  index++;
-} while (index < fruits.length);
+const pThreeElement = document.querySelector("#p3");
+pThreeElement.classList.add("third");
 // THE TASK 4 SECTION
 
-console.log("\n`NOTE`: 'for(of){}' loop shows each item of []");
+console.log("`Add .fourth and .border classes to the fourth p element`");
 
 // THE TASK 5 SECTION
-for (const fruit of fruits) {
-  console.log(fruit);
-}
+const pFourElement = document.querySelector("#p4");
+pFourElement.classList.add("fourth", "border");
 // THE TASK 5 SECTION
 
-console.log("\n`NOTE`: 'for(){}' loop shows even items of Numbs[]");
+console.log("`Find all elements with .container class and show the first element from each`");
 
 // THE TASK 6 SECTION
-const Numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const container = document.querySelectorAll(".container");
 
-for (let i = 0; i < Numbs.length; i++) {
-  if (Numbs[i] % 2 === 0) {
-    console.log(Numbs[i]);
-  }
+for (let i = 0; i < container.length; i++) {
+  const firstChild = container[i].firstElementChild;
+  console.log("First element - ", firstChild);
 }
 // THE TASK 6 SECTION
 
-console.log("\n`NOTE`: 'push()' added the 'Joker' to the end of []");
+console.log("`Find all elements with .container class and show the content of the first element from each`");
 
 // THE TASK 7 SECTION
-{
-  const names = ["Batman"];
-  names.push("Joker");
-  console.log(names);
+for (let i = 0; i < container.length; i++) {
+  const firstChildWithContent = cont[i].firstElementChild.textContent;
+  console.log("Contents: ", firstChildWithContent);
 }
 // THE TASK 7 SECTION
 
-console.log("\n`NOTE`: 'unshift()' added the 'Joker' to the start of []");
+console.log("`Find all elements with .container header and use `for` loops`");
 
 // THE TASK 8 SECTION
-{
-  const names = ["Batman"];
-  names.unshift("Joker");
-  console.log(names);
-}
+
 // THE TASK 8 SECTION
-
-console.log("\n`NOTE`: 'unshift()' added the 'Catwoman' to the start of []");
-
-// THE TASK 9 SECTION
-{
-  const names = ["Batman", "Joker", "Bane"];
-  names.unshift("Catwoman");
-  console.log(names);
-}
-// THE TASK 9 SECTION
-
-console.log("\n`NOTE`: '...names' added the 'Catwoman' to the start of []");
-
-// THE TASK 10 SECTION
-{
-  let names = ["Batman", "Joker", "Bane"];
-  names = ["Catwoman", ...names];
-  console.log(names);
-}
-// THE TASK 10 SECTION
-
-console.log(
-  "\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []"
-);
-
-// THE TASK 11 SECTION
-{
-  const names = ["Batman", "Joker", "Bane"];
-  names.splice(1, 0, "Catwoman");
-  console.log(names);
-}
-// THE TASK 11 SECTION
-
-console.log(
-  "\n`NOTE`: 'indexOf() and splice() ' removed the 'Catwoman' and 'Joker' from []"
-);
-
-// THE TASK 12 SECTION
-{
-  const names = ["Batman", "Catwoman", "Joker", "Bane"];
-  console.log(names);
-
-  const indexCatwoman = names.indexOf("Catwoman");
-
-  if (indexCatwoman !== -1) {
-    names.splice(indexCatwoman, 1);
-  }
-
-  console.log(names);
-
-  const indexJoker = names.indexOf("Joker");
-  if (indexJoker !== -1) {
-    names.splice(indexJoker, 1);
-  }
-
-  console.log(names);
-}
-// THE TASK 12 SECTION
-
-console.log(
-  "\n`NOTE`: 'new Set() and add()' replaced the 'Catwoman' and 'Joker' with 'Alfred' in []"
-);
-
-// THE TASK 13 SECTION
-{
-  let names = ["Batman", "Catwoman", "Joker", "Bane"];
-  console.log(names);
-  const rename = "Alfred";
-
-  const newArray = new Set();
-
-  for (let i = 0; i < names.length; i++) {
-    if (names[i] === "Catwoman" || names[i] === "Joker") {
-      newArray.add(rename);
-    } else {
-      newArray.add(names[i]);
-    }
-  }
-
-  names = Array.from(newArray);
-
-  console.log(names);
-}
-// THE TASK 13 SECTION
-
-console.log(
-  "\n`NOTE`: 'includes()' checks for the 'Alfred' in [], if absent - 'push()'"
-);
-
-// THE TASK 14 SECTION
-{
-  const names = ["Batman", "Catwoman", "Joker", "Bane"];
-  console.log(names);
-
-  if (!names.includes("Alfred")) {
-    names.push("Alfred");
-  }
-  console.log(names);
-}
-// THE TASK 14 SECTION
-
-console.log(
-  "\n`NOTE`: 'indexOf()' checks for the 'Alfred' in [], if present - 'splice()'"
-);
-
-// THE TASK 15 SECTION
-{
-  const names = ["Batman", "Catwoman", "Joker", "Bane"];
-  console.log(names);
-
-  const alfred = names.indexOf("Alfred");
-
-  if (alfred !== -1) {
-    names.splice(alfred, 1);
-  } else {
-    console.log("Couldn't find 'Alfred'. The array it was looked for above⬆️");
-  }
-}
-// THE TASK 15 SECTION
