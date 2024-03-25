@@ -1,28 +1,43 @@
 // THE TASK 1 SECTION
 const alert = document.querySelector(".alert");
 //++
-function clearAlertClasses() {
-  while (alertOne.classList.length > 0) {
-    alertOne.classList.remove(alertOne.classList.item(0));
+function clearAlert() {
+  while (alertMessage.classList.length > 0) {
+    alertMessage.classList.remove(alertMessage.classList.item(0));
   }
-  alertOne.classList.add("alert", "mt-5");
-  alertOne.textContent = "";
+  alertMessage.classList.add("alert", "mt-5");
+  alertMessage.textContent = "";
 }
 
-let showAlertOne = function () {
-  clearAlertClasses();
-  alertOne.classList.add("alert-primary");
-  alertOne.textContent = "A simple primary alert—check it out!";
+let showAlert = function () {
+  clearAlert();
+  alertMessage.classList.add("alert-primary");
+  alertMessage.textContent = "A simple primary alert—check it out!";
 };
-
 // THE TASK 1 SECTION
 
 // THE TASK 2 SECTION
-
+const taskTwoBtn = document.getElementsByClassName("btn-secondary");
+taskTwoBtn[0].addEventListener("click", function () {
+  clearAlert();
+  alertMessage.classList.add("alert-primary");
+  alertMessage.textContent = "A simple secondary alert—check it out!";
+});
 // THE TASK 2 SECTION
 
 // THE TASK 3 SECTION
+const taskThreeBtn = document.getElementsByClassName("btn-success");
 
+taskThreeBtn[0].addEventListener("mouseover", function () {
+  clearAlert();
+  alertMessage.classList.add("alert-success");
+  alertMessage.textContent = "A simple success alert—check it out!";
+});
+
+taskThreeBtn[0].addEventListener("mouseout", function () {
+  alertMessage.classList.remove("alert-success");
+  alertMessage.textContent = "";
+});
 // THE TASK 3 SECTION
 
 // THE TASK 4 SECTION
