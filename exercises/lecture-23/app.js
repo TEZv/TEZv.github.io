@@ -41,21 +41,71 @@ taskThreeBtn[0].addEventListener("mouseout", function () {
 // THE TASK 3 SECTION
 
 // THE TASK 4 SECTION
-
+const taskFourBtn = document.getElementsByClassName("btn-danger");
+taskFourBtn[0].addEventListener("focus", function () {
+  clearAlert();
+  alertMessage.classList.add("alert-danger");
+  alertMessage.textContent = "A simple danger alert—check it out!";
+});
+taskFourBtn[0].addEventListener("focusout", function () {
+  clearAlert();
+  alertMessage.classList.remove("alert-danger");
+  alertMessage.textContent = "";
+});
 // THE TASK 4 SECTION
 
 // THE TASK 5 SECTION
+const btnDarkMode = document.querySelector(".btn-dark");
+const btnLightMode = document.querySelector(".btn-light");
+btnLightMode.style.display = "none";
 
+function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+
+  const isDarkMode = document.body.classList.contains("dark-mode");
+
+  if (isDarkMode) {
+    btnDarkMode.style.display = "none";
+    btnLightMode.style.display = "inline-block";
+  } else {
+    btnDarkMode.style.display = "inline-block";
+    btnLightMode.style.display = "none";
+  }
+}
+
+btnDarkMode.addEventListener("click", toggleMode);
+btnLightMode.addEventListener("click", toggleMode);
 // THE TASK 5 SECTION
 
 // THE TASK 6 SECTION
-
+const btnInfo = document.querySelector(".btn-info");
+btnInfo.addEventListener("keypress", function (e) {
+  clearAlert();
+  if (e.key === "Enter") {
+    e.preventDefault();
+    alertMessage.classList.add("alert-info");
+    alertMessage.textContent = "A simple info alert—check it out!";
+  } else {
+    clearAlert();
+  }
+});
 // THE TASK 6 SECTION
 
 // THE TASK 7 SECTION
+const cards = document.querySelectorAll(".card");
 
+for (let i = 0; i < cards.length; i++) {
+  const cardTitle = cards[i].querySelector(".card-title");
+  console.log(cardTitle.textContent);
+}
 // THE TASK 7 SECTION
 
 // THE TASK 8 SECTION
-
+// The 95 row contains needed selectors
+for (let i = 0; i < cards.length; i++) {
+  const btnAddToCart = cards[i].querySelector(".add-to-cart");
+  btnAddToCart.addEventListener("click", function () {
+    console.log(cards[i].querySelector(".card-title").textContent);
+  });
+}
 // THE TASK 8 SECTION
