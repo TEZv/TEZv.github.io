@@ -31,9 +31,39 @@ colors.forEach(iterateOne);
 // THE TASK 2 SECTION
 
 // THE TASK 3 SECTION
+const letters = ["a", "b", "c"];
 
+function iterateTwo(letter) {
+  console.log(this === window);
+}
+letters.forEach(iterateTwo);
 // THE TASK 3 SECTION
 
 // THE TASK 4 SECTION
+const Numbers = [22, 3, 4, 10];
+let allEven = true;
 
+Numbers.forEach(function (number) {
+  if (number % 2 === 1) {
+    allEven = false;
+  }
+});
+console.log(allEven);
 // THE TASK 4 SECTION
+
+// THE TASK 5 SECTION
+const allEvenNew = Numbers.every((number) => number % 2 === 0);
+console.log(allEvenNew);
+// THE TASK 5 SECTION
+
+// THE TASK 6 SECTION
+
+// THE TASK 6 SECTION
+
+// THE TASK 7 SECTION
+
+// THE TASK 7 SECTION
+
+// THE TASK 8 SECTION
+
+// THE TASK 8 SECTION
