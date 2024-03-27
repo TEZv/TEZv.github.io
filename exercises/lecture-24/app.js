@@ -57,13 +57,30 @@ console.log(allEvenNew);
 // THE TASK 5 SECTION
 
 // THE TASK 6 SECTION
+const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
 
+const index = fruits.findIndex((fruit) => fruit === "blueberries");
+console.log("first index : ", index);
 // THE TASK 6 SECTION
 
 // THE TASK 7 SECTION
-
+const arr = [7, 33, 47, 99, 2, 103, 79];
+const findElem = arr.find((elem) => elem > 10);
+console.log(findElem);
 // THE TASK 7 SECTION
 
 // THE TASK 8 SECTION
+const array = [1, 2, 3, 4, 5];
 
+const even = (element) => element % 2 === 0;
+console.log(array.some(even));
 // THE TASK 8 SECTION
+
+// THE TASK 9 SECTION
+const numbers = [1, 30, 4, 21, 100000];
+
+numbers.sort(function (a, b) {
+  return a - b;
+});
+console.log(numbers);
+// THE TASK 9 SECTION
