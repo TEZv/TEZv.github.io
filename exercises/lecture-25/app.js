@@ -76,5 +76,4 @@ function createTable() {
 }
 
 createTable();
-
 // THE TASK 3 SECTION
