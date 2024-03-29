@@ -16,7 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes circuit/closure and its manipulation methods: forEach(), every(), findIndex(), find(), some(), sort()
+- [x] Practice with JavaScript Basics that includes circuit/closure and its manipulation methods: createElement(), appendChild()
 <br><br>
 
 **P.S.** 😸.
