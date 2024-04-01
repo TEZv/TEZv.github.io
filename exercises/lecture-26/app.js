@@ -1,79 +1,87 @@
-//Added ids for the correct viewport
-const firstTask = document.getElementById("firstTask");
-const secondTask = document.getElementById("secondTask");
-const thirdTask = document.getElementById("thirdTask");
-
 // THE TASK 1 SECTION
-const list = ["html", "css", "javascript", "react.js"];
-//++
-const ulList = document.createElement("ul");
-list.forEach((item) => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  ulList.appendChild(li);
-});
+function calculate(operation, initialValue, numbers) {
+  let result = initialValue;
+  for (const number of numbers) {
+    result = operation(result, number);
+  }
+  return result;
+}
+function sum(n1, n2) {
+  return n1 + n2;
+}
+function multiply(n1, n2) {
+  return n1 * n2;
+}
+console.log(calculate(sum, 0, [1, 2, 4])); // --> 7
+console.log(calculate(multiply, 1, [1, 2, 4])); // --> 8
 
-firstTask.appendChild(ulList);
 // THE TASK 1 SECTION
 
 // THE TASK 2 SECTION
-const listWithHref = [
-  { html: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-  { css: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-  { javascript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  { "react.js": "https://react.dev" },
-];
-//++
-const orderedList = document.createElement("ol");
-listWithHref.forEach((obj) => {
-  const liItem = document.createElement("li");
-  const addLink = document.createElement("a");
-  addLink.href = Object.values(obj)[0];
-  addLink.textContent = Object.keys(obj)[0];
-  liItem.appendChild(addLink);
-  orderedList.appendChild(liItem);
-});
+let student_names = ["Wick", "Malcolm", "Smith"];
 
-secondTask.appendChild(orderedList);
+//++
+student_names.map((name, index, array) => {
+  console.log(
+    `name: ${name} || index: ${index} || array: [ ${array.join(", ")} ]`
+  );
+});
 // THE TASK 2 SECTION
 
 // THE TASK 3 SECTION
-const students = [
-  { firstName: "Tom", lastName: "Cat", degree: 230 },
-  { firstName: "Nary", lastName: "Ann", degree: 336 },
-  { firstName: "John", lastName: "Doe", degree: 400 },
-  { firstName: "James", lastName: "Bond", degree: 700 },
+let students_information = [
+  { name: "Wick", degree: 375 },
+  { name: "Malcolm", degree: 405 },
+  { name: "Smith", degree: 453 },
 ];
 //++
-function createTable() {
-  const table = document.createElement("table");
-  const thead = document.createElement("thead");
-  const headerRow = document.createElement("tr");
-  const headers = ["First Name", "Last Name", "Degree"];
+maxDegree = 600;
 
-  headers.forEach((headerText) => {
-    const th = document.createElement("th");
-    th.textContent = headerText;
-    headerRow.appendChild(th);
-  });
+students_information.map((student) => {
+  const percentage = (student.degree / maxDegree) * 100;
+  console.log({ ...student, percentage });
+});
+// THE TASK 3 SECTION
 
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-  const tbody = document.createElement("tbody");
+// THE TASK 4 SECTION
+let arrayTaskFour = [
+  1,
+  2,
+  3,
+  [10, 11, 12],
+  21,
+  22,
+  23,
+  [31, 32, 33, 34],
+  [41, 42],
+];
 
-  students.forEach((student) => {
-    const row = document.createElement("tr");
-    const { firstName, lastName, degree } = student;
-    row.innerHTML = `
-          <td>${firstName}</td>
-          <td>${lastName}</td>
-          <td>${degree}</td>
-      `;
-    tbody.appendChild(row);
-  });
-  table.appendChild(tbody);
-  thirdTask.appendChild(table);
+//++
+const reducer = arrayTaskFour.reduce((acc, value) => {
+  return acc.concat(value);
+}, []);
+console.log(reducer);
+// THE TASK 4 SECTION
+
+// THE TASK 5 SECTION
+Array.prototype.upperCase = function () {
+  for (let i = 0; i < this.length; i++) {
+    if (typeof this[i] === "string") {
+      this[i] = this[i].toUpperCase();
+    }
+  }
+};
+
+function myFunc() {
+  let arrToUpperCase = [
+    "Algorithm",
+    "Data Structure",
+    "Operating System",
+    "html",
+  ];
+  arrToUpperCase.upperCase();
+  console.log(arrToUpperCase);
 }
 
-createTable();
-// THE TASK 3 SECTION
+myFunc(); // [ 'ALGORITHM', 'DATA STRUCTURE', 'OPERATING SYSTEM', 'HTML' ]
+// THE TASK 5 SECTION
