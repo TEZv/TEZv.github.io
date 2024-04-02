@@ -62,53 +62,34 @@ for (let i = 0; i < container.length; i++) {
 }
 // THE TASK 7 SECTION
 
-console.log("`Find all elements with .container header and use `for` loops`");
+console.log("`Find all elements with .container header and use `for (of)` loop`");
 
 // THE TASK 8 SECTION
+// Find a collection of all elements with the selector '.container header' and store it in the variable headers.
 const headers = document.querySelectorAll(".container header");
-console.log(headers);
+
+// Array of classes to be added to the headers
 const classes = ["first", "second", "third", "fourth"];
 
-for (let i = 0; i < headers.length; i++) {
-  const h1Header = headers[i].querySelector("h1");
+// Iterate through each header element and its index in the collection
+for (const [index, header] of headers.entries()) {
+  // Find the h1 header inside the current header element
+  const h1Header = header.querySelector("h1");
+
+  // Store the original id and class of the h1 header
   const originId = h1Header.id;
   const originClass = h1Header.className;
 
-  if (i === 0) {
-    h1Header.classList.add(classes[i]);
-  } else if (i === 1) {
-    h1Header.outerHTML =
-      "<h2 id='" +
-      originId +
-      "' class='" +
-      originClass +
-      " " +
-      classes[i] +
-      "'>" +
-      h1Header.innerHTML +
-      "</h2>";
-  } else if (i === 2) {
-    h1Header.outerHTML =
-      "<h3 id='" +
-      originId +
-      "' class='" +
-      originClass +
-      " " +
-      classes[i] +
-      "'>" +
-      h1Header.innerHTML +
-      "</h3>";
-  } else if (i === 3) {
-    h1Header.outerHTML =
-      "<h4 id='" +
-      originId +
-      "' class='" +
-      originClass +
-      " " +
-      classes[i] +
-      "'>" +
-      h1Header.innerHTML +
-      "</h4>";
-  }
+  // Determine the new tag based on the index
+  const newTagName = "h" + (index + 1);
+
+  // Create a new element with the corresponding tag, id, class, and content
+  const newHeader = document.createElement(newTagName);
+  newHeader.id = originId;
+  newHeader.className = originClass + " " + classes[index];
+  newHeader.innerHTML = h1Header.innerHTML;
+
+  // Replace the current element with the new one
+  h1Header.parentNode.replaceChild(newHeader, h1Header);
 }
 // THE TASK 8 SECTION
