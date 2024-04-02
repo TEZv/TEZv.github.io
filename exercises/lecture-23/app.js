@@ -55,24 +55,24 @@ taskFourBtn[0].addEventListener("focusout", function () {
 // THE TASK 4 SECTION
 
 // THE TASK 5 SECTION
+// Find buttons with the class btn-dark and btn-light on the page
 const btnDarkMode = document.querySelector(".btn-dark");
 const btnLightMode = document.querySelector(".btn-light");
-btnLightMode.style.display = "none";
 
+// Function to toggle the dark mode and switch buttons accordingly
 function toggleMode() {
+  // Toggle the dark-mode class on the document body
   document.body.classList.toggle("dark-mode");
 
-  const isDarkMode = document.body.classList.contains("dark-mode");
-
-  if (isDarkMode) {
-    btnDarkMode.style.display = "none";
-    btnLightMode.style.display = "inline-block";
-  } else {
-    btnDarkMode.style.display = "inline-block";
-    btnLightMode.style.display = "none";
-  }
+  // Toggle the 'hide' class on the btnDarkMode and btnLightMode buttons
+  btnDarkMode.classList.toggle("hide");
+  btnLightMode.classList.toggle("hide");
 }
 
+// Hide the btnLightMode button initially
+btnLightMode.classList.toggle("hide");
+
+// Add event listeners to toggle mode when buttons are clicked
 btnDarkMode.addEventListener("click", toggleMode);
 btnLightMode.addEventListener("click", toggleMode);
 // THE TASK 5 SECTION
