@@ -1,11 +1,11 @@
-console.log("`NOTE`: String -> [], fruits ==> []");
+console.log("`1NOTE`: String -> [], fruits ==> []");
 // THE TASK 1 SECTION
 let fruits = "apple banana cantaloupe blueberries grapefruit";
 fruits = fruits.split(" ");
 console.log(fruits);
 // THE TASK 1 SECTION
 
-console.log("\n`NOTE`: 'for(){}' loop shows each item of []");
+console.log("\n`2NOTE`: 'for(){}' loop shows each item of []");
 
 // THE TASK 2 SECTION
 for (let i = 0; i < fruits.length; i++) {
@@ -13,7 +13,7 @@ for (let i = 0; i < fruits.length; i++) {
 }
 // THE TASK 2 SECTION
 
-console.log("\n`NOTE`: 'while(){}' loop shows each item of []");
+console.log("\n`3NOTE`: 'while(){}' loop shows each item of []");
 
 // THE TASK 3 SECTION
 let fruitElement = 0;
@@ -23,7 +23,7 @@ while (fruitElement < fruits.length) {
 }
 // THE TASK 3 SECTION
 
-console.log("\n`NOTE`: 'do{} while()' loop shows each item of []");
+console.log("\n`4NOTE`: 'do{} while()' loop shows each item of []");
 
 // THE TASK 4 SECTION
 let index = 0;
@@ -33,7 +33,7 @@ do {
 } while (index < fruits.length);
 // THE TASK 4 SECTION
 
-console.log("\n`NOTE`: 'for(of){}' loop shows each item of []");
+console.log("\n`5NOTE`: 'for(of){}' loop shows each item of []");
 
 // THE TASK 5 SECTION
 for (const fruit of fruits) {
@@ -41,7 +41,7 @@ for (const fruit of fruits) {
 }
 // THE TASK 5 SECTION
 
-console.log("\n`NOTE`: 'for(){}' loop shows even items of Numbs[]");
+console.log("\n`6NOTE`: 'for(){}' loop shows even items of Numbs[]");
 
 // THE TASK 6 SECTION
 const Numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -53,7 +53,7 @@ for (let i = 0; i < Numbs.length; i++) {
 }
 // THE TASK 6 SECTION
 
-console.log("\n`NOTE`: 'push()' added the 'Joker' to the end of []");
+console.log("\n`7NOTE`: 'push()' added the 'Joker' to the end of []");
 
 // THE TASK 7 SECTION
 {
@@ -63,7 +63,7 @@ console.log("\n`NOTE`: 'push()' added the 'Joker' to the end of []");
 }
 // THE TASK 7 SECTION
 
-console.log("\n`NOTE`: 'unshift()' added the 'Joker' to the start of []");
+console.log("\n`8NOTE`: 'unshift()' added the 'Joker' to the start of []");
 
 // THE TASK 8 SECTION
 {
@@ -73,7 +73,7 @@ console.log("\n`NOTE`: 'unshift()' added the 'Joker' to the start of []");
 }
 // THE TASK 8 SECTION
 
-console.log("\n`NOTE`: 'unshift()' added the 'Catwoman' to the start of []");
+console.log("\n`9NOTE`: 'unshift()' added the 'Catwoman' to the start of []");
 
 // THE TASK 9 SECTION
 {
@@ -83,7 +83,7 @@ console.log("\n`NOTE`: 'unshift()' added the 'Catwoman' to the start of []");
 }
 // THE TASK 9 SECTION
 
-console.log("\n`NOTE`: '...names' added the 'Catwoman' to the start of []");
+console.log("\n`10NOTE`: '...names' added the 'Catwoman' to the start of []");
 
 // THE TASK 10 SECTION
 {
@@ -94,7 +94,7 @@ console.log("\n`NOTE`: '...names' added the 'Catwoman' to the start of []");
 // THE TASK 10 SECTION
 
 console.log(
-  "\n`NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []"
+  "\n`11NOTE`: 'splice(1, 0, 'Catwoman')' added the 'Catwoman' on the 2nd place of []"
 );
 
 // THE TASK 11 SECTION
@@ -106,7 +106,7 @@ console.log(
 // THE TASK 11 SECTION
 
 console.log(
-  "\n`NOTE`: 'indexOf() and splice() ' removed the 'Catwoman' and 'Joker' from []"
+  "\n`12NOTE`: 'indexOf() and splice() ' removed the 'Catwoman' and 'Joker' from []"
 );
 
 // THE TASK 12 SECTION
@@ -132,33 +132,19 @@ console.log(
 // THE TASK 12 SECTION
 
 console.log(
-  "\n`NOTE`: 'new Set() and add()' replaced the 'Catwoman' and 'Joker' with 'Alfred' in []"
+  "\n`13NOTE`: 'splice()' replaced the 'Catwoman' and 'Joker' with 'Alfred' in []"
 );
 
 // THE TASK 13 SECTION
 {
-  let names = ["Batman", "Catwoman", "Joker", "Bane"];
-  console.log(names);
-  const rename = "Alfred";
-
-  const newArray = new Set();
-
-  for (let i = 0; i < names.length; i++) {
-    if (names[i] === "Catwoman" || names[i] === "Joker") {
-      newArray.add(rename);
-    } else {
-      newArray.add(names[i]);
-    }
-  }
-
-  names = Array.from(newArray);
-
-  console.log(names);
+  const names = ["Batman", "Catwoman", "Joker", "Bane"];
+  names.splice(1, 2, "Alfred");
+  console.log(names); // => ['Batman', 'Alfred' ,'Bane']
 }
 // THE TASK 13 SECTION
 
 console.log(
-  "\n`NOTE`: 'includes()' checks for the 'Alfred' in [], if absent - 'push()'"
+  "\n`14NOTE`: 'includes()' checks for the 'Alfred' in [], if absent - 'push()'"
 );
 
 // THE TASK 14 SECTION
@@ -174,7 +160,7 @@ console.log(
 // THE TASK 14 SECTION
 
 console.log(
-  "\n`NOTE`: 'indexOf()' checks for the 'Alfred' in [], if present - 'splice()'"
+  "\n`15NOTE`: 'indexOf()' checks for the 'Alfred' in [], if present - 'splice()'"
 );
 
 // THE TASK 15 SECTION
