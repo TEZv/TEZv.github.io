@@ -16,7 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes Higher-Order Functions and Array's methods: result = operation(result, number); map(), reduce(), concat(), Array.prototype.upperCase, toUpperCase()
+- [x] Practice with JavaScript Basics that includes Storages: JSON.parse(localStorage.getItem("items")) || []; JSON.stringify(), setItem() and trim()
 <br><br>
 
 **P.S.** 😸.
