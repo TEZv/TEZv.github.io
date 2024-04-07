@@ -12,16 +12,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     --main-color: rgb(26, 26, 71);
     --anchor-color: #e21161;
-    --anchor-active-color: rgb(252, 76, 57);
+    --anchor-active-color: rgb(241, 94, 8);
     --currency-symbol: "\20B4";
 }
-
-
-
 body {
     color: var(--main-color);
     font-family: 'Poppins', sans-serif;
@@ -38,6 +34,7 @@ h1, h2, h3 {
 h1 {
     /* font-size: calc(1.3rem + 1.1vw); */
     font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.6rem;
 }
 
 h2 {
