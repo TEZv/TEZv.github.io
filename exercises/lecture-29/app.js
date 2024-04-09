@@ -1,29 +1,48 @@
 // THE TASK 1 SECTION
-const ul = document.querySelector("ul");
-const input = document.getElementById("item");
-let itemsArray = JSON.parse(localStorage.getItem("items")) || [];
-
-function addTask(text) {
-  const li = document.createElement("li");
-  li.textContent = text;
-  ul.appendChild(li);
-}
-
-itemsArray.forEach(addTask);
-
-function add() {
-  const taskText = input.value.trim();
-  if (taskText !== "") {
-    itemsArray.push(taskText);
-    localStorage.setItem("items", JSON.stringify(itemsArray));
-    addTask(taskText);
-    input.value = "";
+class AuthException extends Error {
+  constructor(code, message) {
+    let newMessage = message ? `${code}: ${message}` : code;
+    super(newMessage);
+    this.message = newMessage;
+  }
+  toString() {
+    return this.message;
   }
 }
 
-function del() {
-  localStorage.removeItem("items");
-  itemsArray = [];
-  ul.innerHTML = "";
+const dialogBoxId = document.getElementById("dialogBox");
+const renderText = dialogBoxId.querySelector(".message");
+const checkAuth = document.querySelector(".check-auth");
+
+let isAuth = (auth) => auth ?? false;
+
+function showDialog(e) {
+  dialogBoxId.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+    }
+  });
+
+  dialogBoxId.showModal();
 }
+
+function closeDialog() {
+  dialogBoxId.close();
+}
+
+checkAuth.addEventListener("click", function () {
+  try {
+    if (!isAuth()) {
+      throw new AuthException(
+        "FORBIDDEN",
+        `You don't have access to this page`
+      );
+    } else {
+      window.open("success.html");
+    }
+  } catch (error) {
+    renderText.textContent = error;
+    showDialog();
+  }
+});
 // THE TASK 1 SECTION
