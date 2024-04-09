@@ -1,29 +1,44 @@
 // THE TASK 1 SECTION
-const ul = document.querySelector("ul");
-const input = document.getElementById("item");
-let itemsArray = JSON.parse(localStorage.getItem("items")) || [];
+const formRegister = document.getElementById("registrationForm");
+const errorMessages = document.getElementById("errorMessages");
 
-function addTask(text) {
-  const li = document.createElement("li");
-  li.textContent = text;
-  ul.appendChild(li);
-}
+formRegister.addEventListener("submit", function (e) {
+  e.preventDefault();
+  errorMessages.innerHTML = "";
 
-itemsArray.forEach(addTask);
+  const userName = document.getElementById("username").value.trim();
+  const mail = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
 
-function add() {
-  const taskText = input.value.trim();
-  if (taskText !== "") {
-    itemsArray.push(taskText);
-    localStorage.setItem("items", JSON.stringify(itemsArray));
-    addTask(taskText);
-    input.value = "";
+  if (!userName) {
+    renderMessage("Username cannot be empty", false);
+    return;
   }
-}
 
-function del() {
-  localStorage.removeItem("items");
-  itemsArray = [];
-  ul.innerHTML = "";
+  const mailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!mailValid.test(mail)) {
+    renderMessage("Invalid email address format", false);
+    return;
+  }
+
+  const passwordValid =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/;
+  if (password.length < 8 || !passwordValid.test(password)) {
+    renderMessage(
+      "Password MUST BE at least 8 characters long[aBcdef1%], contain 1 UPPERCASE letter[A-Z], 1 lowercase letter[a-z], 1 digit[1-9], and 1 special character[@$!%*?&].",
+      false
+    );
+    return;
+  }
+
+  renderMessage("Registration is successful", true);
+  formRegister.reset();
+});
+
+function renderMessage(message, isSuccess) {
+  const messageDiv = document.createElement("div");
+  messageDiv.textContent = message;
+  messageDiv.classList.add(isSuccess ? "success" : "error");
+  errorMessages.appendChild(messageDiv);
 }
 // THE TASK 1 SECTION

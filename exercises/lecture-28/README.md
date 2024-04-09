@@ -1,12 +1,12 @@
 # QALight
-## The Homework to the Lecture 27
+## The Homework to the Lecture 28
 
 - [x] Edit the project structure:<br>
 ├── exercises<br>
 │   ├── lecture-NN<br>
-│   ├── lecture-27<br>
+│   ├── lecture-28<br>
 │   │   ├── app.js<br>
-│   │   ├── app.css<br>
+│   │   ├── style.css<br>
 │   │   ├── index.html<br>
 │   │   └── README.md<br>
 │   ├── index.html <br>
@@ -23,12 +23,12 @@
 
 ## The Website
 Of the current task: <br>
-The lecture-27 website: [a relative link](./index.html)<br>
-The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-27
+The lecture-28 website: [a relative link](./index.html)<br>
+The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-28
 <br />
 --> Github
 
 ## Deadline
-03.04.24 <br />
+05.04.24 <br />
 
-- [x] Done 95% of all requirements by 03.04.24
+- [x] Done 95% of all requirements by 09.04.24
