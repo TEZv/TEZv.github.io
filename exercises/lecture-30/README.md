@@ -16,7 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes Storages: JSON.parse(localStorage.getItem("items")) || []; JSON.stringify(), setItem() and trim()
+- [x] Practice with JavaScript Basics that includes AJAX: .trim(), setTimeout(()=>{}), xhr.open(), xhr.onload = function () {}, JSON.parse(), map(), send()
 <br><br>
 
 **P.S.** 😸.
