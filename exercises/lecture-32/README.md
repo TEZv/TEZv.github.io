@@ -16,7 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes AJAX: .trim(), setTimeout(()=>{}), xhr.open(), xhr.onload = function () {}, JSON.parse(), map(), send()
+- [x] Practice with JavaScript Basics that includes fetch: 
 <br><br>
 
 **P.S.** 😸.
