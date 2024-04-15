@@ -25,6 +25,8 @@
 Of the current task: <br>
 The lecture-31 website: [a relative link](./index.html)<br>
 The link to the task: https://github.com/couchjanus/web-dev-exercises/tree/main/exercises/lecture-31
+The external link to the task (json): https://my-json-server.typicode.com/TEZv/db
+The external link to the source (db): https://github.com/TEZv/db/blob/main/db.json
 <br />
 --> Github
 
