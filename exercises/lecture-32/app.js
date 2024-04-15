@@ -20,28 +20,45 @@ const fetchWithPosts = async () => {
   }
 };
 
-console.log(xhrPromise("GET", url));
+const fetchUserInfo = async (userId) => {
+  try {
+    if (usersCache[userId]) {
+      return usersCache[userId];
+    } else {
+      const response = await fetch(
+        `https://jsonplaceholder.typicode.com/users/${userId}`
+      );
+      if (!response.ok) {
+        throw new Error("Sorry, failed to fetch the user info");
+      }
+      const userInfo = await response.json();
+      usersCache[userId] = userInfo;
+      return userInfo;
+    }
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};
 
-xhrPromise("GET", url)
-  .then((response) => {
-    const posts = JSON.parse(response);
+const usersCache = {};
+
+(async () => {
+  try {
+    const posts = await fetchWithPosts();
     let result = "";
-    posts.forEach((item) => {
+    for (const item of posts) {
       result += template(item);
-    });
+    }
     document.getElementById("blog").innerHTML = result;
-  })
 
-  .then(() => {
-    const users = document.querySelectorAll(".author");
-    users.forEach((user) => {
-      xhrPromise(
-        "GET",
-        `https://jsonplaceholder.typicode.com/users/${user.dataset.id}`
-      ).then((response) => {
-        let userName = JSON.parse(response);
-        console.log(userName.name);
-        user.textContent = userName.name;
-      });
-    });
-  });
+    const authorElements = document.querySelectorAll(".author");
+    for (const authorElement of authorElements) {
+      const userId = authorElement.dataset.id;
+      const userInfo = await fetchUserInfo(userId);
+      authorElement.textContent = userInfo.name;
+    }
+  } catch (error) {
+    console.error(error);
+  }
+})();

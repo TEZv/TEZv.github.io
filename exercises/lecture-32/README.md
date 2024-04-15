@@ -16,7 +16,7 @@
 └── README.md<br>
 
 - [x] Add the `<!DOCTYPE html>` to .html<br>
-- [x] Practice with JavaScript Basics that includes fetch: 
+- [x] Practice with JavaScript Basics that includes fetch: fetch(), async, await, .json()
 <br><br>
 
 **P.S.** 😸.
