@@ -1,4 +1,4 @@
-const url = "";
+const url = "https://jsonplaceholder.typicode.com/posts";
 
 const template = (item) => `
 <h3>${item.title}</h3>
