@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <!-- brand -->
-      <a href="../index.html" class="brand">Shopaholic</a>
+      <a href="../index.html" class="brand">Oksana.Kolisnyk Shop</a>
       <!-- navigation -->
       <nav class="navbar">
         <a href="../index.html">Home</a>
@@ -21,23 +21,73 @@
 
       <nav class="toolbar">
         <a href="#" class="far fa-heart"></a>
-        <a href="./cart.html" class="fas fa-dolly-flatbed"></a>
+        <a href="./cart.html" class="fas fa-dolly-flatbed"
+          >(<span id="cart-amount">0</span>)</a
+        >
         <a href="#" class="far fa-user"></a>
       </nav>
     </header>
     <section class="breadcrumb-bg-light mt-5">
       <div class="container py-3 px-5">
         <div class="breadcrumb-container">
-          <div class="breadcrumb-title">About Us</div>
+          <div class="breadcrumb-title"><h1>About Page</h1></div>
           <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
             <li class="breadcrumb-item active">About</li>
           </ul>
         </div>
       </div>
     </section>
-    <h1>About page</h1>
+    <section id="about">
+      <div class="container">
+        <div class="left-content">
+          <h2>About Us</h2>
+          <p>
+            Welcome to <strong>Oksana.Kolisnyk Shop</strong>! We are passionate
+            about providing high-quality cosmetics that enhance your natural
+            beauty and elevate your skincare routine. Our mission is to empower
+            individuals to feel confident and beautiful in their own skin.
+          </p>
+          <br />
+          <p>
+            At Oksana.Kolisnyk Shop, we believe in the power of self-care and
+            the importance of using products that are not only effective but
+            also safe and gentle on the skin. That's why we carefully curate our
+            collection to include only the finest ingredients and formulas that
+            deliver visible results.
+          </p>
+          <p>
+            Whether you're looking for nourishing body oils, rejuvenating face
+            toners, luxurious perfumes, or soothing CBD oils, we have something
+            for everyone.<br />
+            Our goal is to provide a seamless shopping experience and
+            exceptional customer service to ensure your satisfaction every step
+            of the way.
+          </p>
+          <br />
+          <p>
+            Thank you for choosing Oksana.Kolisnyk Shop as your destination for
+            all things beauty. We look forward to helping you discover your new
+            favorite skincare essentials and enhancing your beauty routine.
+          </p>
+          <p>
+            <strong>Oksana.Kolisnyk Shop</strong> - we are all about
+            <strong>COSMETICS</strong>
+          </p>
+        </div>
+        <div class="right-content">
+          <img src="../assets/background/bg-banner.jpg" alt="About Us Image" />
+        </div>
+      </div>
+    </section>
 
+    <script src="../js/db.js"></script>
     <script src="../js/app.js"></script>
+    <!-- page footer -->
+
+    <dialog id="details">
+      <a href="#!" title="Close" class="close fas fa-times"></a>
+      <span class="dialog-main"></span>
+    </dialog>
   </body>
 </html>
