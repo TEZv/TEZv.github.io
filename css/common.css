@@ -16,7 +16,7 @@
     --main-color: rgb(26, 26, 71);
     --anchor-color: #e21161;
     --anchor-active-color: rgb(241, 94, 8);
-    --currency-symbol: "\20B4";
+    --currency-symbol: "\0024";
 }
 body {
     color: var(--main-color);

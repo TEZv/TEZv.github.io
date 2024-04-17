@@ -5,6 +5,7 @@
   --footer-ligal-background-color: #000;
   --footer-a-color: #eee;
   --footer-light-color: #fff;
+  --footer-a-pink-color: #fc60b5;
   --footer-a-font-size: .85rem;
 }
 .page-footer .footer-main {
@@ -17,6 +18,9 @@
 .page-footer .footer-main .footer-main-item > ul > li > a {
   color: var(--footer-a-color);
   font-size: var(--footer-a-font-size);
+}
+.footer-exercises {
+  color: var(--footer-a-pink-color) !important;
 }
 .page-footer .footer-main .footer-main-item > ul > li > a:hover {
   color: var(--footer-light-color);

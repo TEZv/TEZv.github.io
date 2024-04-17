@@ -1,14 +1,50 @@
 #blog .container {
-    display: grid;
-    gap:1em;
-    grid-template-columns: auto 15rem;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: auto 15rem;
 }
 
 .blog-main {
-    height: 30ch;
-    border: 1px dotted red;
+  height: 30ch;
+  border: 1px dotted red;
 }
 
 .blog-sidebar {
-    border: 1px dotted goldenrod;
+  border: 1px dotted goldenrod;
+}
+
+.blog-post {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.blog-content {
+  margin-top: 15px;
+  & img {
+    width: 100%;
+  }
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
 }

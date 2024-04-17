@@ -636,28 +636,28 @@ template.innerHTML = `
           <div class="footer-main-item">
             <h3 class="footer-title">About</h3>
             <ul>
-              <li><a href="">Services</a></li>
-              <li><a href="">Profiles</a></li>
-              <li><a href="">Prices</a></li>
-              <li><a href="">Customers</a></li>
-              <li><a href=".exercises/index.html">Exercises</a></li>
+              <li><a href="../pages/catalog.html">Services</a></li>
+              <li><a href="../pages/about.html">Profiles</a></li>
+              <li><a href="../pages/catalog.html">Prices</a></li>
+              <li><a href="https://www.trustpilot.com/categories/cosmetics_store">Reviews</a></li>
+              <li><a class="footer-exercises" href="../exercises/index.html">Exercises</a></li>
             </ul>
           </div>
           <div class="footer-main-item">
             <h3 class="footer-title">Resources</h3>
             <ul>
-              <li><a href="">Docs</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">eBooks</a></li>
-              <li><a href="">Webinars</a></li>
+              <li><a href="https://csplus.com.ua/eng/reyestratsiya-kosmetychnykh-zasobiv.html">Docs</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="https://www.cosmeticsandtoiletries.com/multimedia/ebook">eBooks</a></li>
+              <li><a href="https://connect.in-cosmetics.com/category/multimedia/webinars/">Webinars</a></li>
             </ul>
           </div>
           <div class="footer-main-item">
             <h3 class="footer-title">Contact</h3>
             <ul>
-              <li><a href="">Help</a></li>
-              <li><a href="">Sales</a></li>
-              <li><a href="">Advertise</a></li>
+              <li><a href="../pages/contact.html">Help</a></li>
+              <li><a href="../pages/contact.html">Sales</a></li>
+              <li><a href="../pages/contact.html">Advertise</a></li>
             </ul>
           </div>
         </section>
@@ -665,22 +665,22 @@ template.innerHTML = `
         <section class="footer-social py-3">
           <ul class="footer-social-list">
             <li>
-              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/oksanka.kolisnyk"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href="https://twitter.com/OksanaKolisnyk"><i class="fab fa-twitter"></i></a>
             </li>
             <li>
               <a href=""><i class="fab fa-instagram"></i></a>
             </li>
             <li>
-              <a href=""><i class="fab fa-github"></i></a>
+              <a href="https://github.com/TEZv"><i class="fab fa-github"></i></a>
             </li>
             <li>
-              <a href=""><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/oksana-kolisnyk-0b9632247/"><i class="fab fa-linkedin"></i></a>
             </li>
             <li>
-              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com/@tezv20"><i class="fab fa-youtube"></i></a>
             </li>
           </ul>
         </section>
