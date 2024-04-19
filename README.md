@@ -18,14 +18,18 @@ This story takes its beginning since 25 January thanks to the https://foundation
 <a href="https://github.com/couchjanus">Janus Couch</a>
 
 ### The Mentor of the course
-Vlad Solonko
+Vlad Solonko, [Mykola Morozov](https://t.me/dexterh16)<br>
 
 ### Languages
-Ukrainian/English
+English
 
 ### LICENSE
-This repository follows the <a href="https://github.com/couchjanus/web-dev-exercises/blob/main/LICENSE">MIT License</a>.
-
+This repository follows the [MIT License](https://github.com/couchjanus/web-dev-exercises/blob/main/LICENSE).
 
 ## My />Web Developer</ projects from the QALight
 ### And this root also contains the files of the personal site
+
+[x] -- What technologies did I use?
+[x] HTML, 
+[x] CSS, 
+[x] JavaScript 

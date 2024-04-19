@@ -2,7 +2,8 @@
 
 const currency = (total) =>
   parseFloat(Math.round(total * 100) / 100).toFixed(2);
-
+const filterItem = (items, id) => items.filter((item) => item.id != id);
+const findItem = (items, id) => items.find((item) => item.id == id);
 const compare =
   (key, order = "acs") =>
   (a, b) => {
@@ -40,7 +41,7 @@ function Product(id, name, price, image) {
   this.image = image;
 }
 
-function CardProduct(item) {
+function CardProduct(productList, item) {
   this.item = item;
 
   const detailTemplate = (item) => `
@@ -80,7 +81,6 @@ function CardProduct(item) {
                 <a class="btn-link far fa-heart add-to-wishlist" href="#!" data-id="${item.id}">&nbsp;Add to wish list</a>
                 </div>
             </div>    
-        
         </div>
       </div>
     `;
@@ -90,11 +90,35 @@ function CardProduct(item) {
   const closeButton = dialog.querySelector("dialog .close");
   let dialogMain = dialog.querySelector("dialog .dialog-main");
 
+  function renderModal(modal) {
+    modal.querySelector(".btn-inc").addEventListener("click", (e) => {
+      let val = e.target.previousElementSibling.value;
+      val++;
+      e.target.previousElementSibling.value = val;
+    });
+    modal.querySelector(".btn-dec").addEventListener("click", (e) => {
+      let val = e.target.nextElementSibling.value;
+      if (val > 1) {
+        val--;
+      }
+      e.target.nextElementSibling.value = val;
+    });
+
+    let quantityResult = modal.querySelector(".quantity-result");
+    let addToCart = modal.querySelector(".add-to-cart");
+    addToCart.addEventListener("click", (e) => {
+      let id = e.target.closest(".to-cart").dataset.id;
+      let product = productList.getProductById(id);
+      product = { ...product, amount: +quantityResult.value };
+      shoppingCart.addItemToCart(product);
+    });
+  }
   showButton.addEventListener("click", (event) => {
     let parent = event.target.closest(".product");
     let id = parent.dataset.id;
     dialogMain.innerHTML = detailTemplate(productList.getProductById(id));
     dialog.showModal();
+    renderModal(dialogMain);
   });
 
   closeButton.addEventListener("click", () => {
@@ -142,9 +166,25 @@ function Cart(tax = 0.07, shipping = 0) {
         <div class="cell"><img src="${product.image}" alt="${product.name}" height="30"></div>
         <div class="cell">${product.name}</div>
         <div class="cell"><span class="product-price price">${product.price}</span></div>
-        <div class="cell">${item.amount}</div>
+
+
+        <div class="cell">
+
+        <div class="number-input quantity" data-id="${product.id}">
+                        <button class="btn btn-dec">-</button>
+                        <input class="quantity-result"
+                                        type="number" 
+                                        value="${item.amount}"
+                                        min="1"
+                                        max="10"
+                                        required 
+                                        />
+                        <button class="btn btn-inc">+</button>
+                    </div> 
+        </div>
+
         <div class="cell"><span class="product-subtotal price">0</span></div>
-        <div class="cell"><a href="#!" class="fas fa-trash-alt"></a></div>
+        <div class="cell"><a href="#!" data-id="${product.id}" class="fas fa-trash-alt"></a></div>
     </div>
     `;
 
@@ -253,6 +293,36 @@ function Cart(tax = 0.07, shipping = 0) {
   this.clearCart = function () {
     cart = [];
     this.saveCart();
+  };
+
+  this.renderCart = function (shippingCartItems) {
+    this.setCartTotal(shippingCartItems);
+    shippingCartItems.addEventListener("click", (event) => {
+      if (event.target.classList.contains("fa-trash-alt")) {
+        cart = filterItem(cart, event.target.dataset.id);
+        this.setCartTotal(shippingCartItems);
+        this.saveCart();
+        event.target.closest(".cart-item").remove();
+      } else if (event.target.classList.contains("btn-inc")) {
+        let tmp = findItem(cart, event.target.closest(".quantity").dataset.id);
+        tmp.amount += 1;
+        console.log("tmp ", tmp);
+        event.target.previousElementSibling.value = tmp.amount;
+        this.setCartTotal(shippingCartItems);
+        this.saveCart();
+      } else if (event.target.classList.contains("btn-dec")) {
+        let tmp = findItem(cart, event.target.closest(".quantity").dataset.id);
+        if (tmp !== undefined && tmp.amount > 1) {
+          tmp.amount -= 1;
+          event.target.nextElementSibling.value = tmp.amount;
+        } else {
+          cart = filterItem(cart, event.target.dataset.id);
+          event.target.closest(".cart-item").remove();
+        }
+        this.setCartTotal(shippingCartItems);
+        this.saveCart();
+      }
+    });
   };
 }
 
@@ -475,45 +545,72 @@ const renderShowOnly = (showOnly, products, productContainer) => {
 };
 
 let shoppingCart = new Cart();
-let productList = new ProductList(products);
+
 const cartAmount = document.getElementById("cart-amount");
 
 cartAmount.textContent = shoppingCart.totalAmount();
+
+async function fetchData(url) {
+  return await fetch(url, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  }).then((response) => {
+    if (response.status >= 400) {
+      return response.json().then((err) => {
+        const error = new Error("Something went wrong!");
+        error.data = err;
+        throw error;
+      });
+    }
+    return response.json();
+  });
+}
+
 function main() {
+  const url = "https://my-json-server.typicode.com/TEZv/db";
+
   const productContainer = document.querySelector(".product-container");
 
   if (productContainer) {
-    productContainer.innerHTML = productList.populateProductList(products);
+    fetchData(`${url}/products`).then((products) => {
+      let productList = new ProductList(products);
+      productContainer.innerHTML = productList.populateProductList(products);
 
-    let productCards = productContainer.querySelectorAll(".product");
+      let productCards = productContainer.querySelectorAll(".product");
 
-    productCards.forEach((item) => new CardProduct(item));
+      productCards.forEach((item) => new CardProduct(productList, item));
 
-    const sidebar = document.getElementById("sidebar");
+      const sidebar = document.getElementById("sidebar");
 
-    if (sidebar) {
-      const categoryContainer = document.getElementById("category-container");
-      populateCategories(categoryContainer, categories);
+      if (sidebar) {
+        const categoryContainer = document.getElementById("category-container");
 
-      renderCategory(productContainer, "#category-container", products);
-    }
+        fetchData(`${url}/categories`).then((categories) => {
+          populateCategories(categoryContainer, categories);
 
-    const selectPicker = document.getElementById("selectpicker");
-    if (selectPicker) {
-      renderSelect(selectPicker, products, productContainer);
-    }
+          renderCategory(productContainer, "#category-container", products);
+        });
+      }
 
-    const showOnly = document.querySelector(".show-only");
-    if (showOnly) {
-      renderShowOnly(showOnly, products, productContainer);
-    }
+      const selectPicker = document.getElementById("selectpicker");
+      if (selectPicker) {
+        renderSelect(selectPicker, products, productContainer);
+      }
+
+      const showOnly = document.querySelector(".show-only");
+      if (showOnly) {
+        renderShowOnly(showOnly, products, productContainer);
+      }
+    });
   }
 
   const cartPage = document.getElementById("cart-page");
   if (cartPage) {
     const shippingCartItems = cartPage.querySelector(".cart-main .table");
     shippingCartItems.innerHTML = shoppingCart.populateShoppingCart(products);
-    shoppingCart.setCartTotal(shippingCartItems);
+    shoppingCart.renderCart(shippingCartItems);
+
+    // shoppingCart.setCartTotal(shippingCartItems);
 
     let isAuth = (auth) => auth ?? false;
 
@@ -567,7 +664,7 @@ function main() {
             "You don`t have access to this page."
           );
         } else {
-          window.open("./checkout.html");
+          window.open("../pages/checkout.html");
         }
       } catch (e) {
         console.error(e);
@@ -581,47 +678,67 @@ function main() {
       }
     });
   }
+  
 
   const checkoutPage = document.getElementById("checkout-page");
   if (checkoutPage) {
-    const checkoutForm = checkoutPage.getElementById("checkout-form");
+    const checkoutForm = checkoutPage.querySelector("#checkout-form");
     const errorMessages = document.getElementById("errorMessages");
+
     function displayError(message) {
       errorMessages.innerHTML += `<div class="error">${message}</div>`;
     }
 
     function isValidEmail(email) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
     }
 
     checkoutForm.addEventListener("submit", function (event) {
-      event.preventDefault();
+      event.preventDefault(); // Prevent the form from submitting and refreshing the page
 
-      const { name, email, address1, address2, city, zipcode } =
-        checkoutForm.elements;
-
+      // Clear any existing error messages
       errorMessages.innerHTML = "";
-      if (!name.value.trim()) {
+
+      const name = checkoutForm.elements.name.value.trim();
+      const email = checkoutForm.elements.email.value.trim();
+      const address1 = checkoutForm.elements.address1.value.trim();
+      const address2 = checkoutForm.elements.address2.value.trim();
+      const city = checkoutForm.elements.city.value.trim();
+      const zipcode = checkoutForm.elements.zipcode.value.trim();
+
+      let hasErrors = false;
+
+      // Validate form fields
+      if (name === "") {
         displayError("Name field is required.");
-        return;
-      }
-      if (!address1.value.trim() || !address2.value.trim()) {
-        displayError("Address 1 or Address 2 fields is required.");
-        return;
+        hasErrors = true;
       }
 
-      if (!city.value.trim()) {
-        displayError("City field is required.");
-        return;
-      }
-      if (!zipcode.value.trim()) {
-        displayError("City postal code is required.");
-        return;
-      }
-
-      if (!email.value.trim() || !isValidEmail(email.value)) {
+      if (!isValidEmail(email)) {
         displayError("Please enter a valid email address.");
-        return;
+        hasErrors = true;
+      }
+
+      if (address1 === "" && address2 === "") {
+        displayError("At least one address field is required.");
+        hasErrors = true;
+      }
+
+      if (city === "") {
+        displayError("City field is required.");
+        hasErrors = true;
+      }
+
+      if (zipcode === "") {
+        displayError("City postal code is required.");
+        hasErrors = true;
+      }
+
+      // If there were no errors, proceed with the form submission
+      if (!hasErrors) {
+        // You can add your form submission logic here, e.g., sending data to a server or proceeding to a payment page.
+        console.log("Form is valid. Proceed with form submission.");
       }
     });
   }

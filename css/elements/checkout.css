@@ -1,19 +1,17 @@
-.form-emails {
-  margin-left: 3em;
-}
-#contact .container {
+.checkout-container {
   display: grid;
   gap: 1em;
   grid-template-columns: auto 15rem;
 }
-.contact-main {
+
+.checkout-main {
   & .form-container {
     width: 100%;
     margin: 0 auto;
   }
   .form {
-    margin: 2em;
-    padding: .8em;
+    margin: 0;
+    padding: 0;
   }
   .form-control {
     display: block;
@@ -25,9 +23,6 @@
   .input-group {
     display: flex;
     flex-wrap: wrap;
-    & .send__btn {
-        background-color: rgba(179, 1, 69, 0.356);
-    }
   }
   .input-group div {
     padding: 0;
@@ -43,8 +38,8 @@
     color: gainsboro;
     opacity: 1;
   }
-  border: 4px dashed rgba(179, 1, 69, 0.356);
+  border: 1px dotted red;
 }
-.contact-sidebar {
+.checkout-sidebar {
   border: 1px dotted goldenrod;
 }

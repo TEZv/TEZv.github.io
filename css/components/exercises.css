@@ -1,0 +1,20 @@
+div ul div.container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+th,
+td {
+  border: 2px solid #cf00688f;
+  padding: 22px;
+}
+th {
+  background-color: rgba(233, 0, 221, 0.219);
+}
+td {
+    background-color: rgba(71, 3, 41, 0.753);
+    border: 2px solid #3f0018;
+  &:hover {
+    background-color: rgba(36, 5, 28, 0.616);
+  }
+}

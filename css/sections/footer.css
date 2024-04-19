@@ -6,7 +6,7 @@
   --footer-a-color: #eee;
   --footer-light-color: #fff;
   --footer-a-pink-color: #fc60b5;
-  --footer-a-font-size: .85rem;
+  --footer-a-font-size: 0.85rem;
 }
 .page-footer .footer-main {
   background-color: rgb(37, 24, 7);
@@ -73,5 +73,5 @@
 }
 .page-footer .footer-ligal > ul.footer-ligal-list > li:nth-last-child(2) {
   flex: 1;
-  margin-left: 10px
+  margin-left: 10px;
 }

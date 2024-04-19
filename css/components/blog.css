@@ -4,7 +4,6 @@
   grid-template-columns: auto 15rem;
   background-color: #f8f9fa;
 }
-
 .blog-post {
   background-color: rgba(255, 164, 199, 0.18);
   border-radius: 8px;
@@ -13,17 +12,14 @@
   margin-bottom: 20px;
   padding: 20px;
 }
-
 .blog-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .blog-date {
   font-size: 14px;
   color: #888;
 }
-
 .blog-content {
   margin-top: 15px;
   & img {
