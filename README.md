@@ -15,10 +15,10 @@ This story takes its beginning since 25 January thanks to the https://foundation
 --> QALight won the grant to study the vulnerable and endangered social groups of Ukrainians <br> (unemployed, IDP or those who suffering from the war).
 
 ### The Lecturer of the course
-<a href="https://github.com/couchjanus">Janus Couch</a>
+[Janus Couch](https://github.com/couchjanus)
 
 ### The Mentor of the course
-Vlad Solonko, [Mykola Morozov](https://t.me/dexterh16)<br>
+Vlad Solonko, [Mykola Morozov](https://github.com/Dexter19)<br>
 
 ### Languages
 English
