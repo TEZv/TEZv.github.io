@@ -29,7 +29,7 @@ This repository follows the [MIT License](https://github.com/couchjanus/web-dev-
 ## My />Web Developer</ projects from the QALight
 ### And this root also contains the files of the personal site
 
-[x] -- What technologies did I use?
-[x] HTML, 
-[x] CSS, 
-[x] JavaScript 
+- [x] -- What technologies did I use? <br>
+- [x] HTML, <br>
+- [x] CSS, <br>
+- [x] JavaScript <br>
