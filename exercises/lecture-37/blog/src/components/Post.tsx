@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
 };
 
 const Header = () => {
-  return <header>Header</header>;
+  return <header>Header Component</header>;
 };
 
 const PostTitle = () => {
