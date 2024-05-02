@@ -25,6 +25,9 @@ function App() {
         </div>
         <nav>
           <ul className="flex flex-col gap-2">
+          <li>
+              <Link to={`blog`}>Blog</Link>
+            </li>
             <li>
               <Link to={`about`}>About</Link>
             </li>

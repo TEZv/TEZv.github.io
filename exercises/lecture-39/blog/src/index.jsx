@@ -6,12 +6,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import About from "./pages/about.jsx";
 import Contact from "./pages/contact.jsx";
+import BlogInfo from "./components/BlogInfo.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "blog",
+        element: <BlogInfo />,
+      },
       {
         path: "about",
         element: <About />,
