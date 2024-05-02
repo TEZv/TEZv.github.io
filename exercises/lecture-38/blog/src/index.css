@@ -1,0 +1,10 @@
+@import "../node_modules/tailwindcss/base.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  width: 36rem;
+  margin: auto;
+}
