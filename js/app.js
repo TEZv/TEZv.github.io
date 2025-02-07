@@ -808,7 +808,7 @@ template.innerHTML = `
             <li><a href="#">Privacy Policy</a></li>
             <li>
               <a href="#"
-                >&copy; 2024 Copyright&nbsp;&nbsp; Oksana.Kolisnyk Shop Inc.</a
+                >&copy; 2024 Copyright&nbsp;&nbsp; СosmoVibe shop Inc.</a
               >
             </li>
           </ul>
