@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://site.com/sitemap.xml
+Sitemap: https://tezv.github.io/sitemap.xml
